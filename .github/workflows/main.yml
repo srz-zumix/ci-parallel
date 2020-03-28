@@ -2,7 +2,7 @@ on: [push]
 
 name: GitHub Actions
 jobs:
-  spec:
+  parallel:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -12,6 +12,7 @@ jobs:
       - uses: actions/checkout@master
       - name: parallel
         env:
+          TYPE: job
           PARALLEL_NO: ${{ matrix.no }}
           INTEGROMAT_WEBHOOK_URL: ${{ secrets.INTEGROMAT_WEBHOOK }}
         shell: bash

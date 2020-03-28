@@ -16,7 +16,7 @@ if [ -z ${INTEGROMAT_WEBHOOK_URL} ]; then
   export INTEGROMAT_WEBHOOK_URL="https://hook.integromat.com/k1c42tq981hsvjxtqvoe8runsyfem197"
 fi
 
-function send() {
+function send () {
   curl \
     -H "Content-Type: application/json" \
     -X POST \
