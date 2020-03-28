@@ -1,0 +1,43 @@
+version: '1.0'
+stages:
+  - checkout
+  - parallel
+
+steps:
+  main_clone:
+    title: Cloning main repository...
+    type: git-clone
+    stage: checkout
+    repo: '${{CF_REPO_OWNER}}/${{CF_REPO_NAME}}'
+    revision: '${{CF_REVISION}}'
+  ParallelTests1:
+    type: parallel
+    stage: parallel
+    steps:
+      parallel1: &base
+        title: Parallel
+        image: gcc:9
+        environment:
+          - TYPE=step
+          - PARALLEL_NO=1
+        commands:
+          - ./.ci/report.sh
+      parallel2:
+        <<: *base
+        title: Paralle2
+        environment:
+          - PARALLEL_NO=2
+  ParallelTests2:
+    type: parallel
+    stage: parallel
+    steps:
+      parallel3:
+        <<: *base
+        title: Paralle3
+        environment:
+          - PARALLEL_NO=3
+      parallel4:
+        <<: *base
+        title: Paralle4
+        environment:
+          - PARALLEL_NO=4

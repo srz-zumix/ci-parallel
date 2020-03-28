@@ -1,4 +1,9 @@
-on: [push]
+on:
+  push:
+    paths-ignore:
+      - '*.yml'
+      - '.circleci/config.yml'
+      - 'README.md'
 
 name: GitHub Actions
 jobs:
