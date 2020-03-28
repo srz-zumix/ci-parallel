@@ -4,7 +4,7 @@ CI service parallel capability (FREE/OSS Plan)
 
 |CI|Plan|Limit to|Job|Step|
 |:--|:--|:--|:--|
-|[AppVeyor](https://www.appveyor.com)||
+|[AppVeyor](https://www.appveyor.com)||||
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|
 |[Bitrise](https://www.bitrise.io)||
 |[Buddy](https://buddy.works)||
