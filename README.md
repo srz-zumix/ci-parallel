@@ -8,7 +8,7 @@ CI service parallel capability (FREE/OSS Plan)
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|
 |[Bitrise](https://www.bitrise.io)||
 |[Buddy](https://buddy.works)||
-|[CircleCI](https://circleci.com)|OSS||1|4|
+|[CircleCI](https://circleci.com/pricing/)|OSS||1|4|
 |[Cirrus CI](https://cirrus-ci.org/)||
 |[Codefresh](https://codefresh.io/)||
 |[Codeship](https://codeship.com/)||
