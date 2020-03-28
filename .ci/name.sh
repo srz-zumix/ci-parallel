@@ -46,6 +46,7 @@ fi
 
 if [ -n "${GITHUB_ACTIONS+x}" ]; then
     export CI_NAME="GitHub Actions"
+    export SPREADSHEET_ID="1q1G8e2KYbBYWOla4hAv6s4tXQHmyGUCWv8y_fZtVVJQ"
     return
 fi
 

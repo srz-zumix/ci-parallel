@@ -19,5 +19,5 @@ fi
 curl \
   -H "Content-Type: application/json" \
   -X POST \
-  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"number\":\"${PARALLEL_NO}\" }" \
+  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"id\": \"${SPREADSHEET_ID}\", \"type\":\"${TYPE}\", \"number\":\"${PARALLEL_NO}\" }" \
   ${INTEGROMAT_WEBHOOK_URL}
