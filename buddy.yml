@@ -1,0 +1,15 @@
+- pipeline: "build"
+  trigger_mode: "ON_EVERY_PUSH"
+  ref_name: "master"
+  auto_clear_cache: true
+  actions:
+  - action: "Execute: Parallel"
+    type: "BUILD"
+    working_directory: "/buddy/ci-parallel"
+    docker_image_name: "library/gcc"
+    docker_image_tag: "7"
+    execute_commands:
+    - "./.ci/report.sh"
+    mount_filesystem_path: "/buddy/ci-parallel"
+    shell: "BASH"
+    trigger_condition: "ALWAYS"
