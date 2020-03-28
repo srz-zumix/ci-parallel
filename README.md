@@ -13,7 +13,7 @@ CI service parallel capability (FREE/OSS Plan)
 |[Codefresh](https://codefresh.io/)||
 |[Codeship](https://codeship.com/)||
 |[Drone](https://cloud.drone.io/)||
-|[GitHub Actions](https://help.github.com/en/articles/about-github-actions)||
+|[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|OSS||20|-|
 |[Scrutinizer](https://scrutinizer-ci.com)||
 |[Semaphore 2.0](https://semaphoreci.com/product)||
 |[Shippable](http://shippable.com)||
