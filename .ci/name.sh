@@ -6,21 +6,25 @@ fi
 
 if [ -n "${APPVEYOR+x}" ]; then
     export CI_NAME="AppVeyor"
+    export SPREADSHEET_ID="1kQiSpe4xl6fDCWBniiRewnc-baQhDQEYBEYUWrgb3gc"
     return
 fi
 
 if [ -n "${AZURE_HTTP_USER_AGENT+x}" ]; then
     export CI_NAME="Azure Pipelines"
+    export SPREADSHEET_ID="1vArErtZJcbdyGgo4Xp6hp_OF2vJOwPd_YChsSwzivyo"
     return
 fi
 
 if [ -n "${BITRISE_IO+x}" ]; then
     export CI_NAME="Bitrise"
+    export SPREADSHEET_ID="12hdOlsrufZHZJvEnwUr2n62JyaMzBHYzN1X1VS4UGu8"
     return
 fi
 
 if [ -n "${BUDDY+x}" ]; then
     export CI_NAME="Buddy"
+    export SPREADSHEET_ID="1bYPd91gm_7SqHbPq-0dODcnHqcvNDwx6Kn6Xi_mp-wE"
     return
 fi
 
