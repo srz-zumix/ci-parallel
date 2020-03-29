@@ -1,0 +1,44 @@
+version: v1.0
+name: ci-parallel
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+
+auto_cancel:
+  running:
+    when: "branch != 'master'"
+  queued:
+    when: "branch = 'master'"
+
+global_job_config:
+  prologue:
+    commands:
+      - checkout
+  env_vars:
+    - name: TYPE
+      value: step
+
+blocks:
+  - name: "parallel 1"
+    dependencies: []
+    task:
+      # secrets:
+      #   - name: INTEGROMAT_WEBHOOK_URL
+      jobs:
+        - name: parallel
+          parallelism: 4
+          commands:
+            - export PARALLEL_NO=${SEMAPHORE_JOB_INDEX}
+            - ./.ci/report.sh
+  - name: "parallel 2"
+    dependencies: []
+    task:
+      # secrets:
+      #   - name: INTEGROMAT_WEBHOOK_URL
+      jobs:
+        - name: parallel
+          parallelism: 4
+          commands:
+            - export PARALLEL_NO=$((${SEMAPHORE_JOB_INDEX} + 4))
+            - ./.ci/report.sh

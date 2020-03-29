@@ -4,8 +4,6 @@ BASEDIR=$(dirname $0)
 
 echo ${PARALLEL_NO}
 
-# DATE=$(TZ="Asia/Tokyo" date)
-DATE=$(date -u)
 . ${BASEDIR}/name.sh $1
 echo $CI_NAME
 
@@ -17,6 +15,9 @@ if [ -z ${INTEGROMAT_WEBHOOK_URL} ]; then
 fi
 
 function send () {
+  # DATE=$(TZ="Asia/Tokyo" date)
+  DATE=$(date -u)
+
   curl \
     -H "Content-Type: application/json" \
     -X POST \
