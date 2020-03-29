@@ -1,15 +1,27 @@
 version: 2.1
 
+commands:
+  parallel:
+    parameters:
+      index:
+        type: integer
+    steps:
+      - checkout
+      - export PARALLEL_NO=$(($CIRCLE_NODE_INDEX + << parameters.index >>))
+      - run: ./.ci/report.sh
+
 base: &base
   parallelism: 4
+  parameters:
+    index:
+      type: integer
   docker:
     - image: circleci/buildpack-deps:cosmic-browsers
   environment:
     TYPE: step
-    PARALLEL_NO: $CIRCLE_NODE_INDEX
   steps:
-    - checkout
-    - run: ./.ci/report.sh
+    - parallel:
+      index: << parameters.index >>
 
 jobs:
   parallel1:
@@ -22,4 +34,6 @@ workflows:
   default-test:
     jobs:
       - parallel1
-      - parallel1
+        index: 0
+      - parallel2
+        index: 4
