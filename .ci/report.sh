@@ -26,6 +26,6 @@ function send () {
 
 send "B"
 
-sleep 60
+sleep 180
 
 send "E"
