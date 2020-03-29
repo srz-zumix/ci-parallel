@@ -26,6 +26,7 @@ steps:
         <<: *base
         title: Paralle2
         environment:
+          - TYPE=step
           - PARALLEL_NO=2
   ParallelTests2:
     type: parallel
@@ -35,9 +36,11 @@ steps:
         <<: *base
         title: Paralle3
         environment:
+          - TYPE=step
           - PARALLEL_NO=3
       parallel4:
         <<: *base
         title: Paralle4
         environment:
+          - TYPE=step
           - PARALLEL_NO=4

@@ -10,7 +10,7 @@ CI service parallel capability (FREE/OSS Plan)
 |[Buddy](https://buddy.works)||
 |[CircleCI](https://circleci.com/pricing/)|OSS||1|4|
 |[Cirrus CI](https://cirrus-ci.org/)||
-|[Codefresh](https://codefresh.io/)||
+|[Codefresh](https://codefresh.io/)|OSS|account|1|2|
 |[Codeship](https://codeship.com/)||
 |[Drone](https://cloud.drone.io/)||
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|OSS|[account](https://github.blog/changelog/2019-10-28-github-actions-update-to-job-concurrency-usage-limits/)|20|-|

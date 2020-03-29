@@ -24,8 +24,8 @@ function send () {
     ${INTEGROMAT_WEBHOOK_URL}
 }
 
-send "start"
+send "B"
 
 sleep 60
 
-send "end"
+send "E"
