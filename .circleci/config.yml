@@ -8,11 +8,12 @@ commands:
         default: 0
     steps:
       - checkout
-      - run: ./.ci/report.sh
-        environment:
-          TYPE: step
-          JOB_NAME: "${CIRCLE_JOB} ${CIRCLE_NODE_INDEX}/${CIRCLE_NODE_TOTAL}"
-          PARALLEL_NO: $((CIRCLE_NODE_INDEX + << parameters.i >>))
+      - run:
+        command: |
+          echo "export JOB_NAME=\"${CIRCLE_JOB} ${CIRCLE_NODE_INDEX}/${CIRCLE_NODE_TOTAL}\"" >> $BASH_ENV
+          echo "export PARALLEL_NO=$((CIRCLE_NODE_INDEX + << parameters.i >>))" >> $BASH_ENV
+          source $BASH_ENV
+          ./.ci/report.sh
 
 base: &base
   parallelism: 4
@@ -39,5 +40,3 @@ workflows:
     jobs:
       - parallel1:
           i: 0
-      - parallel2:
-          i: 4
