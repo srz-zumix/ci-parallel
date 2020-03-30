@@ -7,13 +7,12 @@ commands:
         type: integer
         default: 0
     steps:
-      - checkout
       - run:
-        command: |
-          echo "export JOB_NAME=\"${CIRCLE_JOB} ${CIRCLE_NODE_INDEX}/${CIRCLE_NODE_TOTAL}\"" >> $BASH_ENV
-          echo "export PARALLEL_NO=$((CIRCLE_NODE_INDEX + << parameters.i >>))" >> $BASH_ENV
-          source $BASH_ENV
-          ./.ci/report.sh
+          command: |
+            echo "export JOB_NAME=\"${CIRCLE_JOB} ${CIRCLE_NODE_INDEX}/${CIRCLE_NODE_TOTAL}\"" >> $BASH_ENV
+            echo "export PARALLEL_NO=$((CIRCLE_NODE_INDEX + << parameters.i >>))" >> $BASH_ENV
+            source $BASH_ENV
+            ./.ci/report.sh
 
 base: &base
   parallelism: 4
