@@ -10,10 +10,9 @@ commands:
       - checkout
       - run:
           command: |
+            export JOB_NAME="${CIRCLE_JOB} ${CIRCLE_NODE_INDEX}/${CIRCLE_NODE_TOTAL}"
+            export PARALLEL_NO=$(($CIRCLE_NODE_INDEX + << parameters.i >>))
             ./.ci/report.sh
-          environment:
-            JOB_NAME: "${CIRCLE_JOB} ${CIRCLE_NODE_INDEX}/${CIRCLE_NODE_TOTAL}"
-            PARALLEL_NO: $(($CIRCLE_NODE_INDEX + << parameters.i >>))
 
 base: &base
   parallelism: 4
