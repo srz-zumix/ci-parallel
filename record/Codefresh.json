@@ -1,0 +1,66 @@
+[
+	{
+		"name": "ParallelTests1 2",
+		"cat": "step",
+		"ph": "B",
+		"ts": "0",
+		"pid": "0",
+		"tid": "2"
+	},
+	{
+		"name": "ParallelTests1 1",
+		"cat": "step",
+		"ph": "B",
+		"ts": "0",
+		"pid": "0",
+		"tid": "1"
+	},
+	{
+		"name": "ParallelTests1 2",
+		"cat": "step",
+		"ph": "E",
+		"ts": "181000000",
+		"pid": "0",
+		"tid": "2"
+	},
+	{
+		"name": "ParallelTests1 1",
+		"cat": "step",
+		"ph": "E",
+		"ts": "181000000",
+		"pid": "0",
+		"tid": "1"
+	},
+	{
+		"name": "ParallelTests2 2",
+		"cat": "step",
+		"ph": "B",
+		"ts": "190000000",
+		"pid": "0",
+		"tid": "4"
+	},
+	{
+		"name": "ParallelTests2 1",
+		"cat": "step",
+		"ph": "B",
+		"ts": "190000000",
+		"pid": "0",
+		"tid": "3"
+	},
+	{
+		"name": "ParallelTests2 2",
+		"cat": "step",
+		"ph": "E",
+		"ts": "371000000",
+		"pid": "0",
+		"tid": "4"
+	},
+	{
+		"name": "ParallelTests2 1",
+		"cat": "step",
+		"ph": "E",
+		"ts": "371000000",
+		"pid": "0",
+		"tid": "3"
+	}
+]
