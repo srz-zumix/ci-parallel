@@ -29,7 +29,7 @@ blocks:
         - name: parallel
           parallelism: 4
           commands:
-            - export JOB_NAME="${SEMAPHORE_JOB_NAME} ${SEMAPHORE_JOB_INDEX}/${SEMAPHORE_JOB_COUNT}"
+            - export JOB_NAME=${SEMAPHORE_JOB_NAME}
             - export PARALLEL_NO=${SEMAPHORE_JOB_INDEX}
             - ./.ci/report.sh
   - name: "parallel 2"
@@ -41,6 +41,6 @@ blocks:
         - name: parallel
           parallelism: 4
           commands:
-            - export JOB_NAME="${SEMAPHORE_JOB_NAME} ${SEMAPHORE_JOB_INDEX}/${SEMAPHORE_JOB_COUNT}"
+            - export JOB_NAME=${SEMAPHORE_JOB_NAME}
             - export PARALLEL_NO=$((${SEMAPHORE_JOB_INDEX} + 4))
             - ./.ci/report.sh
