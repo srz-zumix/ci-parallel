@@ -3,18 +3,21 @@ version: 2.1
 commands:
   parallel:
     parameters:
-      index:
+      i:
         type: integer
         default: 0
     steps:
       - checkout
-      - export PARALLEL_NO=$(($CIRCLE_NODE_INDEX + << parameters.index >>))
-      - run: ./.ci/report.sh
+      - run:
+        command: |
+          export JOB_NAME="${CIRCLE_JOB} ${CIRCLE_NODE_INDEX}/${CIRCLE_NODE_TOTAL}"
+          export PARALLEL_NO=$(($CIRCLE_NODE_INDEX + << parameters.i >>))
+          ./.ci/report.sh
 
 base: &base
   parallelism: 4
   parameters:
-    index:
+    i:
       type: integer
       default: 0
   docker:
@@ -23,7 +26,7 @@ base: &base
     TYPE: step
   steps:
     - parallel:
-      index: << parameters.index >>
+        i: << parameters.i >>
 
 jobs:
   parallel1:
@@ -32,10 +35,9 @@ jobs:
     <<: *base
 
 workflows:
-  version: 2
   default-test:
     jobs:
       - parallel1:
-        index: 0
+          i: 0
       - parallel2:
-        index: 4
+          i: 4

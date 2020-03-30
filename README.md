@@ -19,3 +19,16 @@ CI service parallel capability (FREE/OSS Plan)
 |[Shippable](http://shippable.com)||
 |[Travis CI](https://travis-ci.com/)|
 |[wercker](http://www.wercker.com/)||
+
+# Preview parallel
+
+1. download json
+2. open google chrome
+3. open [chrome://tracing](chrome://tracing/)
+4. load json
+
+## GitHub Actions
+
+[GitHub Actions.json](./record/GitHub Actions.json)
+
+## Semaphore

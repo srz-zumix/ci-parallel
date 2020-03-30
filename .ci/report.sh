@@ -7,6 +7,10 @@ echo ${PARALLEL_NO}
 . ${BASEDIR}/name.sh $1
 echo $CI_NAME
 
+if [ -z ${JOB_NAME+x} ]; then
+  export JOB_NAME="${TYPE}-${PARALLEL_NO}"
+fi
+
 . ${BASEDIR}/commit-hash.sh
 echo $GIT_COMMIT
 
@@ -21,7 +25,7 @@ function send () {
   curl \
     -H "Content-Type: application/json" \
     -X POST \
-    -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"id\": \"${SPREADSHEET_ID}\", \"event\":\"$1\", \"type\":\"${TYPE}\", \"number\":\"${PARALLEL_NO}\" }" \
+    -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"id\": \"${SPREADSHEET_ID}\", \"name\":\"$JOB_NAME\", \"event\":\"$1\", \"type\":\"${TYPE}\", \"number\":\"${PARALLEL_NO}\" }" \
     ${INTEGROMAT_WEBHOOK_URL}
 }
 
