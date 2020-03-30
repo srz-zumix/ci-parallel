@@ -19,7 +19,7 @@ steps:
         image: gcc:9
         environment:
           - TYPE=step
-          - JOB_NAME="ParallelTests1 1"
+          - JOB_NAME=ParallelTests1 1
           - PARALLEL_NO=1
         commands:
           - ./.ci/report.sh
@@ -28,7 +28,7 @@ steps:
         title: Paralle2
         environment:
           - TYPE=step
-          - JOB_NAME="ParallelTests1 2"
+          - JOB_NAME=ParallelTests1 2
           - PARALLEL_NO=2
   ParallelTests2:
     type: parallel
@@ -39,12 +39,12 @@ steps:
         title: Paralle3
         environment:
           - TYPE=step
-          - JOB_NAME="ParallelTests2 1"
+          - JOB_NAME=ParallelTests2 1
           - PARALLEL_NO=3
       parallel4:
         <<: *base
         title: Paralle4
         environment:
           - TYPE=step
-          - JOB_NAME="ParallelTests2 2"
+          - JOB_NAME=ParallelTests2 2
           - PARALLEL_NO=4

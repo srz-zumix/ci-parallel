@@ -29,6 +29,8 @@ CI service parallel capability (FREE/OSS Plan)
 
 ## GitHub Actions
 
-[GitHub Actions.json](./record/GitHub Actions.json)
+[GitHub Actions.json](./record/GitHubActions.json)
+
+![GitHub Actions](./record/images/GitHubActions.png)
 
 ## Semaphore
