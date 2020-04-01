@@ -23,8 +23,8 @@ blocks:
   - name: "parallel 1"
     dependencies: []
     task:
-      # secrets:
-      #   - name: INTEGROMAT_WEBHOOK_URL
+      secrets:
+        - name: INTEGROMAT_WEBHOOK_URL_PARALLEL
       jobs:
         - name: parallel
           parallelism: 4
@@ -35,8 +35,8 @@ blocks:
   - name: "parallel 2"
     dependencies: []
     task:
-      # secrets:
-      #   - name: INTEGROMAT_WEBHOOK_URL
+      secrets:
+        - name: INTEGROMAT_WEBHOOK_URL_PARALLEL
       jobs:
         - name: parallel
           parallelism: 4
