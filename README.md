@@ -8,6 +8,7 @@ CI service parallel capability (FREE/OSS Plan)
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|
 |[Bitrise](https://www.bitrise.io)|OSS|project|1|-|-|1 (x Projects)|
 |[Buddy](https://buddy.works)|OSS|account|1|1|-|1|
+|[CircleCI](https://circleci.com/pricing/)|FREE||1|1|1|1|
 |[CircleCI](https://circleci.com/pricing/)|OSS||1|1|4|4|
 |[Cirrus CI](https://cirrus-ci.org/)||
 |[Codefresh](https://codefresh.io/)|OSS|account|1|2|-|2|
@@ -15,6 +16,7 @@ CI service parallel capability (FREE/OSS Plan)
 |[Drone](https://cloud.drone.io/)||
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|OSS|[account](https://github.blog/changelog/2019-10-28-github-actions-update-to-job-concurrency-usage-limits/)|20|-|-|20|
 |[Scrutinizer](https://scrutinizer-ci.com)||
+|[Semaphore 2.0](https://semaphoreci.com/product)|FREE||1|-|1|1|
 |[Semaphore 2.0](https://semaphoreci.com/product)|OSS||4|-|4|4|
 |[Shippable](http://shippable.com)||
 |[Travis CI](https://travis-ci.com/)|
