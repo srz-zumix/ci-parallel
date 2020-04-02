@@ -5,7 +5,7 @@ CI service parallel capability (FREE/OSS Plan)
 |CI|Plan|Limit to|Concurrency Job|Concurrency Step in Job|Parallelism|Max|
 |:--|:--|:--|:--|:--|:--|:--|
 |[AppVeyor](https://www.appveyor.com)||||
-|[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|
+|[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|OSS|organization|10|-|-|10|
 |[Bitrise](https://www.bitrise.io)|OSS|project|1|-|-|1 (x Projects)|
 |[Buddy](https://buddy.works)|OSS|account|1|1|-|1|
 |[CircleCI](https://circleci.com/pricing/)|FREE||1|1|1|1|
@@ -50,6 +50,11 @@ CI サービスの中には特定の処理を複数並列実行させる機能�
 2. open google chrome
 3. open [chrome://tracing](chrome://tracing/)
 4. load json
+
+## Azure Pipelines
+
+[AzurePipelines.json](./record/AzurePipelines.json)
+![AzurePipelines](./record/images/AzurePipelines.png)
 
 ## CircleCI
 
