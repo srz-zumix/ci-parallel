@@ -31,6 +31,11 @@ cirrus_freebsd_task:
   auto_cancellation: true
   freebsd_instance:
     image: freebsd-11-2-release-amd64
+  matrix:
+    - env:
+        PARALLEL_NO: 1
+    - env:
+        PARALLEL_NO: 2
   env:
     TYPE: job
     JOB_NAME_PREFIX: ${CIRRUS_TASK_NAME}
@@ -50,7 +55,12 @@ cirrus_windows_task:
   windows_container:
     image: cirrusci/windowsservercore:2019
     os_version: 2019
+  matrix:
+    - env:
+        PARALLEL_NO: 1
+    - env:
+        PARALLEL_NO: 2
   env:
     TYPE: job
     JOB_NAME_PREFIX: ${CIRRUS_TASK_NAME}
-  spec_script: .ci/report.sh
+  spec_script: bash ./.ci/report.sh
