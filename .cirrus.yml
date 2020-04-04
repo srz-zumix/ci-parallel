@@ -39,7 +39,7 @@ cirrus_freebsd_task:
   env:
     TYPE: job
     JOB_NAME_PREFIX: ${CIRRUS_TASK_NAME}
-  spec_script: ./.ci/report.sh
+  spec_script: ls && ./.ci/report.sh
 
 cirrus_osx_task:
   auto_cancellation: true
@@ -63,4 +63,4 @@ cirrus_windows_task:
   env:
     TYPE: job
     JOB_NAME_PREFIX: ${CIRRUS_TASK_NAME}
-  spec_script: bash ./.ci/report.sh
+  spec_script: .ci/report.bat
