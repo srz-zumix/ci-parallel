@@ -19,11 +19,11 @@
 
 CI service parallel capability (FREE/OSS Plan)
 
-|CI|Plan|Limit to|Concurrency Job|Concurrency Step in Job|Parallelism|Max|
-|:--|:--|:--|:--|:--|:--|:--|
+|CI|Plan|Limit to|Concurrency Job|Concurrency Step in Job|Parallelism|Max|Note|
+|:--|:--|:--|:--|:--|:--|:--|:--|
 |[AppVeyor](https://www.appveyor.com)||||
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|OSS|organization|10|-|-|10|
-|[Bitrise](https://www.bitrise.io)|OSS|project|1|-|-|1 (x Projects)|
+|[Bitrise](https://www.bitrise.io)|OSS|project|1|-|-|1 (x Projects)|[Starting parallel builds with a single trigger](https://devcenter.bitrise.io/builds/triggering-builds/trigger-multiple-workflows/)|
 |[Buddy](https://buddy.works)|OSS|account|1|1|-|1|
 |[CircleCI](https://circleci.com/pricing/)|FREE||1|1|1|1|
 |[CircleCI](https://circleci.com/pricing/)|OSS||1|1|4|4|
