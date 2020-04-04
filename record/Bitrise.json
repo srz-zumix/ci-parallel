@@ -1,0 +1,66 @@
+[
+	{
+		"name": "ci-parallel-B 3",
+		"cat": "step",
+		"ph": "B",
+		"ts": "0",
+		"pid": "0",
+		"tid": "3"
+	},
+	{
+		"name": "ci-parallel-A 1",
+		"cat": "step",
+		"ph": "B",
+		"ts": "2000000",
+		"pid": "0",
+		"tid": "1"
+	},
+	{
+		"name": "ci-parallel-B 3",
+		"cat": "step",
+		"ph": "E",
+		"ts": "181000000",
+		"pid": "0",
+		"tid": "3"
+	},
+	{
+		"name": "ci-parallel-A 1",
+		"cat": "step",
+		"ph": "E",
+		"ts": "183000000",
+		"pid": "0",
+		"tid": "1"
+	},
+	{
+		"name": "ci-parallel-B 4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "193000000",
+		"pid": "0",
+		"tid": "4"
+	},
+	{
+		"name": "ci-parallel-A 2",
+		"cat": "step",
+		"ph": "B",
+		"ts": "196000000",
+		"pid": "0",
+		"tid": "2"
+	},
+	{
+		"name": "ci-parallel-B 4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "374000000",
+		"pid": "0",
+		"tid": "4"
+	},
+	{
+		"name": "ci-parallel-A 2",
+		"cat": "step",
+		"ph": "E",
+		"ts": "377000000",
+		"pid": "0",
+		"tid": "2"
+	}
+]
