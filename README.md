@@ -28,7 +28,10 @@ CI service parallel capability (FREE/OSS Plan)
 |[Buddy](https://buddy.works)|OSS|account|1|1|-|1|
 |[CircleCI](https://circleci.com/pricing/)|FREE||1|1|1|1|
 |[CircleCI](https://circleci.com/pricing/)|OSS||1|1|4|4|
-|[Cirrus CI](https://cirrus-ci.org/)||
+|[Cirrus CI](https://cirrus-ci.org/faq/#are-there-any-limits)|OSS(Linux)|8|-|-|8||
+|[Cirrus CI](https://cirrus-ci.org/faq/#are-there-any-limits)|OSS(Windows)|2|-|-|2||
+|[Cirrus CI](https://cirrus-ci.org/faq/#are-there-any-limits)|OSS(FreeBSD)|2|-|-|2||
+|[Cirrus CI](https://cirrus-ci.org/faq/#are-there-any-limits)|OSS(macOS)|1|-|-|1||
 |[Codefresh](https://codefresh.io/)|OSS|account|1|2|-|2|
 |[Codeship](https://codeship.com/)||
 |[Drone](https://cloud.drone.io/)||

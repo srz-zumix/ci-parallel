@@ -7,8 +7,16 @@ echo ${PARALLEL_NO}
 . ${BASEDIR}/name.sh $1
 echo $CI_NAME
 
+if [ -z ${PARALLEL_NO+x} ]; then
+    export PARALLEL_NO=1
+fi
+
+if [ -z ${JOB_NAME_PREFIX+x} ]; then
+    export JOB_NAME_PREFIX=${TYPE}
+fi
+
 if [ -z ${JOB_NAME+x} ]; then
-  export JOB_NAME="${TYPE}-${PARALLEL_NO}"
+  export JOB_NAME="${JOB_NAME_PREFIX}-${PARALLEL_NO}"
 fi
 
 . ${BASEDIR}/commit-hash.sh

@@ -1,0 +1,56 @@
+# env:
+#   INTEGROMAT_WEBHOOK_URL: ENCRYPTED[9c27f429840137201c54a77bb56ad8698d0ae2ba6f5a2ceaabc02671e198707d1f6ba516199ee546df281d8a14b2c9cb]
+
+cirrus_container_task:
+  auto_cancellation: true
+  container:
+    image: gcc:latest
+  matrix:
+    - env:
+        PARALLEL_NO: 1
+    - env:
+        PARALLEL_NO: 2
+    - env:
+        PARALLEL_NO: 3
+    - env:
+        PARALLEL_NO: 4
+    - env:
+        PARALLEL_NO: 5
+    - env:
+        PARALLEL_NO: 6
+    - env:
+        PARALLEL_NO: 7
+    - env:
+        PARALLEL_NO: 8
+  env:
+    TYPE: job
+    JOB_NAME_PREFIX: ${CIRRUS_TASK_NAME}
+  spec_script: bash ./.ci/report.sh
+
+cirrus_freebsd_task:
+  auto_cancellation: true
+  freebsd_instance:
+    image: freebsd-11-2-release-amd64
+  env:
+    TYPE: job
+    JOB_NAME_PREFIX: ${CIRRUS_TASK_NAME}
+  spec_script: ./.ci/report.sh
+
+cirrus_osx_task:
+  auto_cancellation: true
+  osx_instance:
+    image: mojave-xcode
+  env:
+    TYPE: job
+    JOB_NAME_PREFIX: ${CIRRUS_TASK_NAME}
+  spec_script: ./.ci/report.sh
+
+cirrus_windows_task:
+  auto_cancellation: true
+  windows_container:
+    image: cirrusci/windowsservercore:2019
+    os_version: 2019
+  env:
+    TYPE: job
+    JOB_NAME_PREFIX: ${CIRRUS_TASK_NAME}
+  spec_script: .ci/report.sh
