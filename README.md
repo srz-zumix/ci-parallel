@@ -6,7 +6,7 @@
 [![Bitrise Build Status](https://app.bitrise.io/app/f9707ca3e09428f3/status.svg?token=vY461vx7e2R5jSt-VKSE8w&branch=master)](https://app.bitrise.io/app/f9707ca3e09428f3)
 <!-- [![buddy pipeline](https://app.buddy.works/zumixcpp/ci-parallel/pipelines/pipeline/231618/badge.svg?token=a0d4d12b159d24a0234f9ed9567ebb40a6268f39f8151ef552999864674de564 "buddy pipeline")](https://app.buddy.works/zumixcpp/ci-parallel/pipelines/pipeline/231618) -->
 [![CircleCI](https://circleci.com/gh/srz-zumix/ci-parallel/tree/master.svg?style=svg)](https://circleci.com/gh/srz-zumix/ci-parallel/tree/master)
-<!-- [![Cirrus Build Status](https://api.cirrus-ci.com/github/srz-zumix/ci-parallel.svg?branch=master)](https://cirrus-ci.com/github/srz-zumix/ci-parallel/master) -->
+[![Cirrus Build Status](https://api.cirrus-ci.com/github/srz-zumix/ci-parallel.svg?branch=master)](https://cirrus-ci.com/github/srz-zumix/ci-parallel/master)
 [![Codefresh build status](https://g.codefresh.io/api/badges/pipeline/srz-zumix/ci-specs%2Fci-parallel?type=cf-2)](https://g.codefresh.io/public/accounts/srz-zumix/pipelines/5e7f5638788e8900ac585a80)
 <!-- [![Codeship Status for srz-zumix/ci-parallel](https://app.codeship.com/projects/265ea250-042c-0138-e6ba-0e8ba424c4b4/status?branch=master)](https://app.codeship.com/projects/378730) -->
 <!-- [![Drone Build Status](https://cloud.drone.io/api/badges/srz-zumix/ci-parallel/status.svg?branch=master)](https://cloud.drone.io/srz-zumix/ci-parallel) -->

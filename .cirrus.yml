@@ -1,5 +1,5 @@
-# env:
-#   INTEGROMAT_WEBHOOK_URL: ENCRYPTED[9c27f429840137201c54a77bb56ad8698d0ae2ba6f5a2ceaabc02671e198707d1f6ba516199ee546df281d8a14b2c9cb]
+env:
+  INTEGROMAT_WEBHOOK_URL: ENCRYPTED[3f760bb35afbfa38ac940b7da7697b75cd220d74db6af093c0a34b6420663d14a71979a594b36250cf18e6cfd7ba72c6]
 
 cirrus_container_task:
   auto_cancellation: true
@@ -39,7 +39,7 @@ cirrus_freebsd_task:
   env:
     TYPE: job
     JOB_NAME_PREFIX: ${CIRRUS_TASK_NAME}
-  prallel_script: sh ./.ci/report.sh
+  prallel_script: ./.ci/report.sh
 
 cirrus_osx_task:
   auto_cancellation: true

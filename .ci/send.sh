@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # DATE=$(TZ="Asia/Tokyo" date)
 DATE=$(date -u)
