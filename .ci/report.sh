@@ -26,19 +26,8 @@ if [ -z ${INTEGROMAT_WEBHOOK_URL} ]; then
   export INTEGROMAT_WEBHOOK_URL="https://hook.integromat.com/k1c42tq981hsvjxtqvoe8runsyfem197"
 fi
 
-function send () {
-  # DATE=$(TZ="Asia/Tokyo" date)
-  DATE=$(date -u)
-
-  curl \
-    -H "Content-Type: application/json" \
-    -X POST \
-    -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"id\": \"${SPREADSHEET_ID}\", \"name\":\"$JOB_NAME\", \"event\":\"$1\", \"type\":\"${TYPE}\", \"number\":\"${PARALLEL_NO}\" }" \
-    ${INTEGROMAT_WEBHOOK_URL}
-}
-
-send "B"
+send.sh "B"
 
 sleep 180
 
-send "E"
+send.sh "E"
