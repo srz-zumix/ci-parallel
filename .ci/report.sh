@@ -21,6 +21,10 @@ if [ -z ${JOB_NAME+x} ]; then
   export JOB_NAME="${JOB_NAME_PREFIX}-${PARALLEL_NO}"
 fi
 
+if [ -z ${SLEEP_SECONDS+x} ]; then
+  export SLEEP_SECONDS=180
+fi
+
 . ${BASEDIR}/commit-hash.sh
 echo $GIT_COMMIT
 
@@ -30,6 +34,6 @@ fi
 
 ${BASEDIR}/send.sh "B"
 
-sleep 180
+sleep ${SLEEP_SECONDS}
 
 ${BASEDIR}/send.sh "E"
