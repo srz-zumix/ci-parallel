@@ -2,6 +2,7 @@ env:
   INTEGROMAT_WEBHOOK_URL: ENCRYPTED[3f760bb35afbfa38ac940b7da7697b75cd220d74db6af093c0a34b6420663d14a71979a594b36250cf18e6cfd7ba72c6]
 
 cirrus_container_task:
+  only_if: &path-filter "changesInclude('.cirrus.yml', '.ci/*')"
   auto_cancellation: true
   container:
     image: gcc:latest
@@ -28,6 +29,7 @@ cirrus_container_task:
   prallel_script: bash ./.ci/report.sh
 
 cirrus_freebsd_task:
+  only_if: *path-filter
   auto_cancellation: true
   freebsd_instance:
     image: freebsd-11-2-release-amd64
@@ -42,6 +44,7 @@ cirrus_freebsd_task:
   prallel_script: ./.ci/report.sh
 
 cirrus_osx_task:
+  only_if: *path-filter
   auto_cancellation: true
   osx_instance:
     image: mojave-xcode
@@ -51,6 +54,7 @@ cirrus_osx_task:
   prallel_script: ./.ci/report.sh
 
 cirrus_windows_task:
+  only_if: *path-filter
   auto_cancellation: true
   windows_container:
     image: cirrusci/windowsservercore:2019
