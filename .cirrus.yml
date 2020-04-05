@@ -25,6 +25,7 @@ cirrus_container_task:
         PARALLEL_NO: 8
   env:
     TYPE: job
+    SLEEP_SECONDS: 360
     JOB_NAME_PREFIX: ${CIRRUS_TASK_NAME}
   prallel_script: bash ./.ci/report.sh
 
@@ -36,6 +37,7 @@ cirrus_osx_task:
   env:
     PARALLEL_NO: 9
     TYPE: job
+    SLEEP_SECONDS: 360
     JOB_NAME_PREFIX: ${CIRRUS_TASK_NAME}
   prallel_script: ./.ci/report.sh
 
@@ -51,6 +53,7 @@ cirrus_freebsd_task:
         PARALLEL_NO: 11
   env:
     TYPE: job
+    SLEEP_SECONDS: 360
     JOB_NAME_PREFIX: ${CIRRUS_TASK_NAME}
   prallel_script: ./.ci/report.sh
 
@@ -67,5 +70,6 @@ cirrus_windows_task:
         PARALLEL_NO: 13
   env:
     TYPE: job
+    SLEEP_SECONDS: 360
     JOB_NAME_PREFIX: ${CIRRUS_TASK_NAME}
   prallel_script: .ci/report.bat

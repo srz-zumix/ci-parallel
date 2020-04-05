@@ -22,18 +22,14 @@ steps:
         #   - JOB_NAME=ParallelTests1 1
         #   - PARALLEL_NO=1
         commands:
-          - export TYPE=step
-          - export JOB_NAME="ParallelTests1 1"
-          - export PARALLEL_NO=1
           - ./.ci/report.sh
       parallel2:
         <<: *base
         title: Paralle2
-        commands:
-          - export TYPE=step
-          - export JOB_NAME="ParallelTests1 2"
-          - export PARALLEL_NO=1
-          - ./.ci/report.sh
+        environment:
+          - TYPE=step
+          - JOB_NAME=ParallelTests1 2
+          - PARALLEL_NO=2
   ParallelTests2:
     type: parallel
     stage: parallel
@@ -41,16 +37,14 @@ steps:
       parallel3:
         <<: *base
         title: Paralle3
-        commands:
-          - export TYPE=step
-          - export JOB_NAME="ParallelTests2 1"
-          - export PARALLEL_NO=1
-          - ./.ci/report.sh
+        environment:
+          - TYPE=step
+          - JOB_NAME=ParallelTests2 1
+          - PARALLEL_NO=3
       parallel4:
         <<: *base
         title: Paralle4
-        commands:
-          - export TYPE=step
-          - export JOB_NAME="ParallelTests2 2"
-          - export PARALLEL_NO=1
-          - ./.ci/report.sh
+        environment:
+          - TYPE=step
+          - JOB_NAME=ParallelTests2 2
+          - PARALLEL_NO=4
