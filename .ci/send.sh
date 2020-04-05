@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # DATE=$(TZ="Asia/Tokyo" date)
-DATE=$(date -u Ins)
+DATE=$(date -u -Ins)
 
 curl \
   -H "Content-Type: application/json" \
