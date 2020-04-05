@@ -23,7 +23,7 @@ steps:
         #   - PARALLEL_NO=1
         commands:
           - export TYPE=step
-          - export JOB_NAME=ParallelTests1 1
+          - export JOB_NAME="ParallelTests1 1"
           - export PARALLEL_NO=1
           - ./.ci/report.sh
       parallel2:
@@ -31,7 +31,7 @@ steps:
         title: Paralle2
         commands:
           - export TYPE=step
-          - export JOB_NAME=ParallelTests1 2
+          - export JOB_NAME="ParallelTests1 2"
           - export PARALLEL_NO=1
           - ./.ci/report.sh
   ParallelTests2:
@@ -43,7 +43,7 @@ steps:
         title: Paralle3
         commands:
           - export TYPE=step
-          - export JOB_NAME=ParallelTests2 1
+          - export JOB_NAME="ParallelTests2 1"
           - export PARALLEL_NO=1
           - ./.ci/report.sh
       parallel4:
@@ -51,6 +51,6 @@ steps:
         title: Paralle4
         commands:
           - export TYPE=step
-          - export JOB_NAME=ParallelTests2 2
+          - export JOB_NAME="ParallelTests2 2"
           - export PARALLEL_NO=1
           - ./.ci/report.sh
