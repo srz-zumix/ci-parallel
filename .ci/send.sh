@@ -1,7 +1,11 @@
 #!/bin/sh
 
 # DATE=$(TZ="Asia/Tokyo" date)
-DATE=$(date -u -Ins)
+DATE=$(date -u)
+
+if [ "$PLATFORM" = "windows" ]; then
+    DATE=$(date -u -Iseconds)
+fi
 
 curl \
   -H "Content-Type: application/json" \

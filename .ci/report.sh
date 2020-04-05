@@ -2,6 +2,8 @@
 
 BASEDIR=$(dirname $0)
 
+. ${BASEDIR}/os-detect.sh
+
 echo ${PARALLEL_NO}
 
 . ${BASEDIR}/name.sh $1
