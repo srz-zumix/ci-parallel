@@ -28,6 +28,17 @@ cirrus_container_task:
     JOB_NAME_PREFIX: ${CIRRUS_TASK_NAME}
   prallel_script: bash ./.ci/report.sh
 
+cirrus_osx_task:
+  only_if: *path-filter
+  auto_cancellation: true
+  osx_instance:
+    image: mojave-xcode
+  env:
+    PARALLEL_NO: 9
+    TYPE: job
+    JOB_NAME_PREFIX: ${CIRRUS_TASK_NAME}
+  prallel_script: ./.ci/report.sh
+
 cirrus_freebsd_task:
   only_if: *path-filter
   auto_cancellation: true
@@ -35,19 +46,9 @@ cirrus_freebsd_task:
     image: freebsd-11-2-release-amd64
   matrix:
     - env:
-        PARALLEL_NO: 1
+        PARALLEL_NO: 10
     - env:
-        PARALLEL_NO: 2
-  env:
-    TYPE: job
-    JOB_NAME_PREFIX: ${CIRRUS_TASK_NAME}
-  prallel_script: ./.ci/report.sh
-
-cirrus_osx_task:
-  only_if: *path-filter
-  auto_cancellation: true
-  osx_instance:
-    image: mojave-xcode
+        PARALLEL_NO: 11
   env:
     TYPE: job
     JOB_NAME_PREFIX: ${CIRRUS_TASK_NAME}
@@ -61,9 +62,9 @@ cirrus_windows_task:
     os_version: 2019
   matrix:
     - env:
-        PARALLEL_NO: 1
+        PARALLEL_NO: 12
     - env:
-        PARALLEL_NO: 2
+        PARALLEL_NO: 13
   env:
     TYPE: job
     JOB_NAME_PREFIX: ${CIRRUS_TASK_NAME}
