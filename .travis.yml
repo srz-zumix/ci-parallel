@@ -1,0 +1,12 @@
+dist: trusty
+sudo: false
+language: cpp
+
+script:
+  - "./.ci/report.sh"
+
+env:
+  matrix:
+  - PARALLEL_NO=1
+  - PARALLEL_NO=2
+  - PARALLEL_NO=3
