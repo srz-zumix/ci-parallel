@@ -33,7 +33,7 @@ cirrus_osx_task:
   only_if: *path-filter
   auto_cancellation: true
   osx_instance:
-    image: mojave-xcode
+    image: catalina-xcode
   env:
     PARALLEL_NO: 9
     TYPE: job
