@@ -15,7 +15,7 @@
 <!-- [![Scrutinizer Build Status](https://scrutinizer-ci.com/g/srz-zumix/ci-parallel/badges/build.png?b=master)](https://scrutinizer-ci.com/g/srz-zumix/ci-parallel/build-status/master) -->
 [![Semaphore 2.0 Build Status](https://srz-zumix.semaphoreci.com/badges/ci-parallel/branches/master.svg)](https://srz-zumix.semaphoreci.com/projects/ci-parallel)
 <!-- [![Shippable Run Status](https://api.shippable.com/projects/5c81c7142c0a8108001b1df3/badge?branch=master)](https://app.shippable.com/github/srz-zumix/ci-parallel) -->
-<!-- [![Travis-CI Build Status](https://travis-ci.com/srz-zumix/ci-parallel.svg?branch=master)](https://travis-ci.com/srz-zumix/ci-parallel) -->
+[![Travis-CI Build Status](https://travis-ci.com/srz-zumix/ci-parallel.svg?branch=master)](https://travis-ci.com/srz-zumix/ci-parallel)
 <!-- [![wercker status](https://app.wercker.com/status/969fcccb15e08d93de063fa7bd7f28d2/s/master "wercker status")](https://app.wercker.com/project/byKey/969fcccb15e08d93de063fa7bd7f28d2) -->
 
 CI service parallel capability (FREE/OSS Plan)
@@ -28,7 +28,7 @@ CI service parallel capability (FREE/OSS Plan)
 |[Buddy](https://buddy.works)|OSS|account|1|1|-|1|
 |[CircleCI](https://circleci.com/pricing/)|FREE||1|1|1|1|
 |[CircleCI](https://circleci.com/pricing/)|OSS||1|1|4|4|
-|[Cirrus CI](https://cirrus-ci.org/faq/#are-there-any-limits)|OSS||Linux: 8, Windows: 2, FreeBSD: 2, macOS: 1|-|13||
+|[Cirrus CI](https://cirrus-ci.org/faq/#are-there-any-limits)|OSS|account|Linux: 8, Windows: 2, FreeBSD: 2, macOS: 1|-|13||
 |[Codefresh](https://codefresh.io/)|OSS|account|1|2|-|2|
 |[Codeship](https://codeship.com/)||
 |[Drone](https://cloud.drone.io/)||

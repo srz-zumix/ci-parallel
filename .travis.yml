@@ -4,6 +4,8 @@ language: cpp
 script:
 - "./.ci/report.sh"
 env:
+  global:
+  - TYPE=job
   matrix:
   - PARALLEL_NO=1
   - PARALLEL_NO=2
