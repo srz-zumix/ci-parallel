@@ -45,7 +45,7 @@ cirrus_freebsd_task:
   only_if: *path-filter
   auto_cancellation: true
   freebsd_instance:
-    image: freebsd-12-1-snap
+    image_family: freebsd-12-1-snap
   matrix:
     - env:
         PARALLEL_NO: 10
