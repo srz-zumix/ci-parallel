@@ -1,0 +1,15 @@
+version: 1.0.{build}
+image:
+  - Ubuntu
+
+clone_depth: 1
+
+environment:
+  TYPE: job
+  matrix:
+    - PARALLEL_NO: 1
+    - PARALLEL_NO: 2
+
+build_script:
+  sh: |
+    ./.ci/report.sh

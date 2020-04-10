@@ -37,7 +37,7 @@ CI service parallel capability (FREE/OSS Plan)
 |[Semaphore 2.0](https://semaphoreci.com/product)|FREE||1|-|1|1|
 |[Semaphore 2.0](https://semaphoreci.com/product)|OSS||4|-|4|4|
 |[Shippable](http://shippable.com)||
-|[Travis CI](https://travis-ci.com/)|
+|[Travis CI](https://travis-ci.com/)|OSS|account|3|-|-|3||
 |[wercker](http://www.wercker.com/)||
 
 ## Concurrency Job
@@ -84,6 +84,11 @@ CI サービスの中には特定の処理を複数並列実行させる機能�
 [CircleCI.json](./record/CircleCI.json)
 ![CircleCI](./record/images/CircleCI.png)
 
+## Cirrus CI
+
+[CirrusCI.json](./record/CirrusCI.json)
+![CirrusCI](./record/images/CirrusCI.png)
+
 ## Codefresh
 
 [Codefresh.json](./record/Codefresh.json)
@@ -98,3 +103,8 @@ CI サービスの中には特定の処理を複数並列実行させる機能�
 
 [Semaphore.json](./record/Semaphore.json)
 ![Semaphore](./record/images/Semaphore.png)
+
+## Travis CI
+
+[TravisCI.json](./record/TravisCI.json)
+![TravisCI](./record/images/TravisCI.png)
