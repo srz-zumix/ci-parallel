@@ -1,6 +1,6 @@
 # Ci-Parallel
 
-<!-- [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/s5slt06sp2hh72pc/branch/master?svg=true)](https://ci.appveyor.com/project/srz-zumix/ci-parallel/branch/master) -->
+[![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/xfuks40g319x9j2d?svg=true)](https://ci.appveyor.com/project/srz-zumix/ci-parallel)
 [![Azure Pipelines Build Status](https://dev.azure.com/srz-zumix/ci-specs/_apis/build/status/ci-parallel?branchName=master)](https://dev.azure.com/srz-zumix/ci-specs/_build/latest?definitionId=10&branchName=master)
 [![Bitrise Build Status](https://app.bitrise.io/app/d8c6ecd7db311dd6/status.svg?token=xVF6g9OZ2mRISjxfHwsUxw&branch=master)](https://app.bitrise.io/app/d8c6ecd7db311dd6)
 [![Bitrise Build Status](https://app.bitrise.io/app/f9707ca3e09428f3/status.svg?token=vY461vx7e2R5jSt-VKSE8w&branch=master)](https://app.bitrise.io/app/f9707ca3e09428f3)
@@ -22,7 +22,7 @@ CI service parallel capability (FREE/OSS Plan)
 
 |CI|Plan|Limit to|Concurrency Job|Concurrency Step in Job|Parallelism|Max|Note|
 |:--|:--|:--|:--|:--|:--|:--|:--|
-|[AppVeyor](https://www.appveyor.com)||||
+|[AppVeyor](https://www.appveyor.com)|OSS|account|1|-|-|1||
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|OSS|organization|10|-|-|10|
 |[Bitrise](https://www.bitrise.io)|OSS|project|1|-|-|1 (x Projects)|[Starting parallel builds with a single trigger](https://devcenter.bitrise.io/builds/triggering-builds/trigger-multiple-workflows/)|
 |[Buddy](https://buddy.works)|OSS|account|1|1|-|1|
@@ -68,6 +68,11 @@ CI サービスの中には特定の処理を複数並列実行させる機能�
 2. open google chrome
 3. open [chrome://tracing](chrome://tracing/)
 4. load json
+
+## AppVeyor
+
+[AppVeyor.json](./record/AppVeyor.json)
+![AppVeyor](./record/images/AppVeyor.png)
 
 ## Azure Pipelines
 
