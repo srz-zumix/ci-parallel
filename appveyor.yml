@@ -4,6 +4,11 @@ image:
 
 clone_depth: 1
 
+only_commits:
+  files:
+    - .ci/
+    - appveyor.yml
+
 environment:
   TYPE: job
   matrix:
