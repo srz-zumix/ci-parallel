@@ -14,7 +14,7 @@
 <!-- [![Peakflow Build Status](https://www.peakflow.io/en/projects/ci-parallel/branch-statuses/master.svg)](https://www.peakflow.io/en/projects/ci-parallel/build-groups?build_groups_q%5Bbranch_name_cont%5D=master) -->
 <!-- [![Scrutinizer Build Status](https://scrutinizer-ci.com/g/srz-zumix/ci-parallel/badges/build.png?b=master)](https://scrutinizer-ci.com/g/srz-zumix/ci-parallel/build-status/master) -->
 [![Semaphore 2.0 Build Status](https://srz-zumix.semaphoreci.com/badges/ci-parallel/branches/master.svg)](https://srz-zumix.semaphoreci.com/projects/ci-parallel)
-<!-- [![Shippable Run Status](https://api.shippable.com/projects/5c81c7142c0a8108001b1df3/badge?branch=master)](https://app.shippable.com/github/srz-zumix/ci-parallel) -->
+[![Shippable Run Status](https://api.shippable.com/projects/5e81da2c352a0d0007594420/badge?branch=master)](https://app.shippable.com/github/srz-zumix/ci-parallel)
 [![Travis-CI Build Status](https://travis-ci.com/srz-zumix/ci-parallel.svg?branch=master)](https://travis-ci.com/srz-zumix/ci-parallel)
 <!-- [![wercker status](https://app.wercker.com/status/969fcccb15e08d93de063fa7bd7f28d2/s/master "wercker status")](https://app.wercker.com/project/byKey/969fcccb15e08d93de063fa7bd7f28d2) -->
 
@@ -24,18 +24,18 @@ CI service parallel capability (FREE/OSS Plan)
 |:--|:--|:--|:--|:--|:--|:--|:--|
 |[AppVeyor](https://www.appveyor.com)|OSS|account|1|-|-|1||
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|OSS|organization|10|-|-|10|
-|[Bitrise](https://www.bitrise.io)|OSS|project|1|-|-|1 (x Projects)|[Starting parallel builds with a single trigger](https://devcenter.bitrise.io/builds/triggering-builds/trigger-multiple-workflows/)|
-|[Buddy](https://buddy.works)|OSS|account|1|1|-|1|
-|[CircleCI](https://circleci.com/pricing/)|FREE||1|1|1|1|
-|[CircleCI](https://circleci.com/pricing/)|OSS||1|1|4|4|
+|[Bitrise](https://www.bitrise.io)|OSS|project|1|-|-|1 (* Projects)|[Starting parallel builds with a single trigger](https://devcenter.bitrise.io/builds/triggering-builds/trigger-multiple-workflows/)|
+|[Buddy](https://buddy.works)|OSS|account|1|1|-|1||
+|[CircleCI](https://circleci.com/pricing/)|FREE||1|1|1|1||
+|[CircleCI](https://circleci.com/pricing/)|OSS||1|1|4|4||
 |[Cirrus CI](https://cirrus-ci.org/faq/#are-there-any-limits)|OSS|account|Linux: 8, Windows: 2, FreeBSD: 2, macOS: 1|-|13||
-|[Codefresh](https://codefresh.io/)|OSS|account|1|2|-|2|
+|[Codefresh](https://codefresh.io/)|OSS|account|1|2|-|2||
 |[Codeship](https://codeship.com/)||
 |[Drone](https://cloud.drone.io/)||
-|[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|OSS|[account](https://github.blog/changelog/2019-10-28-github-actions-update-to-job-concurrency-usage-limits/)|20|-|-|20|
+|[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|OSS|[account](https://github.blog/changelog/2019-10-28-github-actions-update-to-job-concurrency-usage-limits/)|20|-|-|20||
 |[Scrutinizer](https://scrutinizer-ci.com)||
-|[Semaphore 2.0](https://semaphoreci.com/product)|FREE||1|-|1|1|
-|[Semaphore 2.0](https://semaphoreci.com/product)|OSS||4|-|4|4|
+|[Semaphore 2.0](https://semaphoreci.com/product)|FREE||1|-|1|1||
+|[Semaphore 2.0](https://semaphoreci.com/product)|OSS||4|-|4|4||
 |[Shippable](http://shippable.com)||
 |[Travis CI](https://travis-ci.com/)|OSS|account|3|-|-|3||
 |[wercker](http://www.wercker.com/)||
