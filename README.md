@@ -36,7 +36,7 @@ CI service parallel capability (FREE/OSS Plan)
 |[Scrutinizer](https://scrutinizer-ci.com)||
 |[Semaphore 2.0](https://semaphoreci.com/product)|FREE||1|-|1|1||
 |[Semaphore 2.0](https://semaphoreci.com/product)|OSS||4|-|4|4||
-|[Shippable](http://shippable.com)||
+|[Shippable](http://shippable.com)|OSS|account|1|-|-|1||
 |[Travis CI](https://travis-ci.com/)|OSS|account|3|-|-|3||
 |[wercker](http://www.wercker.com/)||
 
@@ -108,6 +108,11 @@ CI サービスの中には特定の処理を複数並列実行させる機能�
 
 [Semaphore.json](./record/Semaphore.json)
 ![Semaphore](./record/images/Semaphore.png)
+
+## Shippable
+
+[Shippable.json](./record/Shippable.json)
+![Shippable](./record/images/Shippable.png)
 
 ## Travis CI
 
