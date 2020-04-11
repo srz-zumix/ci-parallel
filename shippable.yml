@@ -8,8 +8,6 @@ env:
   matrix:
     - PARALLEL_NO: 1
     - PARALLEL_NO: 2
-    - PARALLEL_NO: 3
-    - PARALLEL_NO: 4
 
 script:
   - ./.ci/report.sh
