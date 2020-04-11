@@ -2,6 +2,8 @@ language: c
 compiler:
   - gcc
 
+parallelized_test: true
+
 env:
   TYPE: job
   secure: T7WMGR8W1AXvom/XRwSgD/rNMLqIJyNg8I1c2k38LtD08zH70wIWbaHxW691A5UCGaFRErfcllCwYxpqrs0fs3uwVOBBplp4WHqqtZ3MR4TmJEtaTvsQxG5Ja4l6HIr37wQcIi6SRvhNJY6iAtTEXXqqA5BStDUqotM8bzOYoSK1auGw6Wln1IOXuRb8oRRBRvXni0eq+bWYuxitSV1r5ujcbAZDkRE4HYNnQNiqA+vfZfDJ+jHL6QLnyVS0j7O+huM63fzv9c3IWp1YHU3p2HebWN+eEHM6fmYN4WY0Et+1tIKtN8FBFPc0Yto3u30hAEhcry2e2s/NSAseIHt0Qg==
