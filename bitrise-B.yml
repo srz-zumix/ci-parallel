@@ -25,7 +25,7 @@ workflows:
 
             export TYPE=step
             export PARALLEL_NO=3
-            export JOB_NAME="${BITRISE_APP_TITLE} ${PARALLEL_NO}"
+            export JOB_NAME_PREFIX="${BITRISE_APP_TITLE}"
             ./.ci/report.sh
   secondary:
     steps:
@@ -44,7 +44,7 @@ workflows:
 
             export TYPE=step
             export PARALLEL_NO=4
-            export JOB_NAME="${BITRISE_APP_TITLE} ${PARALLEL_NO}"
+            export JOB_NAME_PREFIX="${BITRISE_APP_TITLE}"
             ./.ci/report.sh
   root:
     steps:

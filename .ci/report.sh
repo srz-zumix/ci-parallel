@@ -17,8 +17,8 @@ if [ -z ${JOB_NAME_PREFIX+x} ]; then
     export JOB_NAME_PREFIX=${TYPE}
 fi
 
-if [ -z ${JOB_NAME+x} ]; then
-  export JOB_NAME="${JOB_NAME_PREFIX}-${PARALLEL_NO}"
+if [ -z ${REPORT_JOB_NAME+x} ]; then
+  export REPORT_JOB_NAME="${JOB_NAME_PREFIX}-${PARALLEL_NO}"
 fi
 
 if [ -z ${SLEEP_SECONDS+x} ]; then
