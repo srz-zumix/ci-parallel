@@ -16,7 +16,7 @@
 [![Semaphore 2.0 Build Status](https://srz-zumix.semaphoreci.com/badges/ci-parallel/branches/master.svg)](https://srz-zumix.semaphoreci.com/projects/ci-parallel)
 [![Shippable Run Status](https://api.shippable.com/projects/5e81da2c352a0d0007594420/badge?branch=master)](https://app.shippable.com/github/srz-zumix/ci-parallel)
 [![Travis-CI Build Status](https://travis-ci.com/srz-zumix/ci-parallel.svg?branch=master)](https://travis-ci.com/srz-zumix/ci-parallel)
-<!-- [![wercker status](https://app.wercker.com/status/969fcccb15e08d93de063fa7bd7f28d2/s/master "wercker status")](https://app.wercker.com/project/byKey/969fcccb15e08d93de063fa7bd7f28d2) -->
+[![wercker status](https://app.wercker.com/status/285dae1f97ed665286a2f325e29c4325/s/master "wercker status")](https://app.wercker.com/project/byKey/285dae1f97ed665286a2f325e29c4325)
 
 CI service parallel capability (FREE/OSS Plan)
 
