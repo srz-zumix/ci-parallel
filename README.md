@@ -118,3 +118,8 @@ CI サービスの中には特定の処理を複数並列実行させる機能�
 
 [TravisCI.json](./record/TravisCI.json)
 ![TravisCI](./record/images/TravisCI.png)
+
+## Wercker
+
+[Wercker.json](./record/Wercker.json)
+![Wercker](./record/images/Wercker.png)
