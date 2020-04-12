@@ -1,0 +1,6 @@
+box: python:3.7
+
+report:
+  steps:
+    - script:
+        code: ./.ci/report.sh
