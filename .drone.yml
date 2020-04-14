@@ -7,12 +7,13 @@ matrix:
     - 1
     - 2
 
-steps:
-- name: spec
-  image: golang
-  environment:
-    TYPE: job
-    INTEGROMAT_WEBHOOK_URL:
-      from_secret: INTEGROMAT_WEBHOOK_URL
-  commands:
-    - "./.ci/report.sh"
+pipeline:
+  build:
+  - name: parallel
+    image: golang
+    environment:
+      TYPE: job
+      INTEGROMAT_WEBHOOK_URL:
+        from_secret: INTEGROMAT_WEBHOOK_URL
+    commands:
+      - "./.ci/report.sh"
