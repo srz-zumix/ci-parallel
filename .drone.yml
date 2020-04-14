@@ -1,19 +1,42 @@
 kind: pipeline
 type: docker
-name: spec container
+name: parallel container
 
-matrix:
-  PARALLEL_NO:
-    - 1
-    - 2
+environment:
+  JOB_NAME_PREFIX: parallel1-1
+  TYPE: step
+  INTEGROMAT_WEBHOOK_URL:
+    from_secret: INTEGROMAT_WEBHOOK_URL
 
-pipeline:
-  build:
-  - name: parallel
-    image: golang
-    environment:
-      TYPE: job
-      INTEGROMAT_WEBHOOK_URL:
-        from_secret: INTEGROMAT_WEBHOOK_URL
-    commands:
-      - "./.ci/report.sh"
+steps:
+- name: &base parallel1-1
+  image: golang
+  environment:
+    PARALLEL_NO: 1
+  commands:
+    - "./.ci/report.sh"
+  depends_on: []
+- <<: *base
+  name: parallel1-2
+  environment:
+    PARALLEL_NO: 2
+
+---
+
+kind: pipeline
+type: docker
+name: parallel container
+
+environment:
+  JOB_NAME_PREFIX: parallel1-2
+  TYPE: step
+  INTEGROMAT_WEBHOOK_URL:
+    from_secret: INTEGROMAT_WEBHOOK_URL
+
+steps:
+- name: &base parallel2
+  image: golang
+  environment:
+    PARALLEL_NO: 3
+  commands:
+    - "./.ci/report.sh"
