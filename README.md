@@ -9,7 +9,7 @@
 [![Cirrus Build Status](https://api.cirrus-ci.com/github/srz-zumix/ci-parallel.svg?branch=master)](https://cirrus-ci.com/github/srz-zumix/ci-parallel/master)
 [![Codefresh build status](https://g.codefresh.io/api/badges/pipeline/srz-zumix/ci-specs%2Fci-parallel?type=cf-2)](https://g.codefresh.io/public/accounts/srz-zumix/pipelines/5e7f5638788e8900ac585a80)
 <!-- [![Codeship Status for srz-zumix/ci-parallel](https://app.codeship.com/projects/265ea250-042c-0138-e6ba-0e8ba424c4b4/status?branch=master)](https://app.codeship.com/projects/378730) -->
-<!-- [![Drone Build Status](https://cloud.drone.io/api/badges/srz-zumix/ci-parallel/status.svg?branch=master)](https://cloud.drone.io/srz-zumix/ci-parallel) -->
+[![Drone Build Status](https://cloud.drone.io/api/badges/srz-zumix/ci-parallel/status.svg?branch=master)](https://cloud.drone.io/srz-zumix/ci-parallel)
 [![GitHub Actions Status](https://github.com/srz-zumix/ci-parallel/workflows/GitHub%20Actions/badge.svg?branch=master)](https://github.com/srz-zumix/ci-parallel/actions?query=workflow%3A%22GitHub+Actions%22)
 <!-- [![Peakflow Build Status](https://www.peakflow.io/en/projects/ci-parallel/branch-statuses/master.svg)](https://www.peakflow.io/en/projects/ci-parallel/build-groups?build_groups_q%5Bbranch_name_cont%5D=master) -->
 <!-- [![Scrutinizer Build Status](https://scrutinizer-ci.com/g/srz-zumix/ci-parallel/badges/build.png?b=master)](https://scrutinizer-ci.com/g/srz-zumix/ci-parallel/build-status/master) -->
@@ -31,14 +31,14 @@ CI service parallel capability (FREE/OSS Plan)
 |[Cirrus CI](https://cirrus-ci.org/faq/#are-there-any-limits)|OSS|account|Linux: 8, Windows: 2, FreeBSD: 2, macOS: 1|-|13||
 |[Codefresh](https://codefresh.io/)|OSS|account|1|2|-|2||
 |[Codeship](https://codeship.com/)||
-|[Drone](https://cloud.drone.io/)||
+|[Drone](https://cloud.drone.io/)|OSS||||
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|OSS|[account](https://github.blog/changelog/2019-10-28-github-actions-update-to-job-concurrency-usage-limits/)|20|-|-|20||
 |[Scrutinizer](https://scrutinizer-ci.com)||
 |[Semaphore 2.0](https://semaphoreci.com/product)|FREE||1|-|1|1||
 |[Semaphore 2.0](https://semaphoreci.com/product)|OSS||4|-|4|4||
 |[Shippable](http://shippable.com)|OSS|account|1|-|-|1||
 |[Travis CI](https://travis-ci.com/)|OSS|account|3|-|-|3||
-|[wercker](http://www.wercker.com/)||
+|[wercker](http://www.wercker.com/)|OSS|account|2|-|-|2||
 
 ## Concurrency Job
 

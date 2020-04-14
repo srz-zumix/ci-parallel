@@ -7,6 +7,15 @@ if [ "$PLATFORM" = "windows" ]; then
     DATE=$(date -u -Iseconds)
 fi
 
+if [ -z ${DRYRUN+x} ]; then
+    echo curl \
+    -H "Content-Type: application/json" \
+    -X POST \
+    -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"id\": \"${SPREADSHEET_ID}\", \"name\":\"$REPORT_JOB_NAME\", \"event\":\"$1\", \"type\":\"${TYPE}\", \"number\":\"${PARALLEL_NO}\" }" \
+    ${INTEGROMAT_WEBHOOK_URL}
+    return
+fi
+
 curl \
   -H "Content-Type: application/json" \
   -X POST \

@@ -2,17 +2,15 @@ kind: pipeline
 type: docker
 name: parallel1
 
-environment:
-  JOB_NAME_PREFIX: parallel1-1
-  TYPE: step
-  INTEGROMAT_WEBHOOK_URL:
-    from_secret: INTEGROMAT_WEBHOOK_URL
-
 steps:
 - &base
   name: parallel1-1
   image: golang
-  environment:
+environment:
+    JOB_NAME_PREFIX: parallel1-1
+    TYPE: step
+    INTEGROMAT_WEBHOOK_URL:
+      from_secret: INTEGROMAT_WEBHOOK_URL
     PARALLEL_NO: 1
   commands:
     - "./.ci/report.sh"

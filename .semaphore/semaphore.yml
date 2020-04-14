@@ -18,6 +18,8 @@ global_job_config:
   env_vars:
     - name: TYPE
       value: step
+    - name: DRYRUN
+      value: "true"
 
 blocks:
   - name: "parallel 1"
