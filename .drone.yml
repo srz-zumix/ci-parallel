@@ -17,26 +17,28 @@ steps:
   commands:
     - "./.ci/report.sh"
   depends_on: []
-- <<: *base
-  name: parallel1-2
-  environment:
-    PARALLEL_NO: 2
+# - <<: *base
+#   name: parallel1-2
+#   environment:
+#     PARALLEL_NO: 2
 
----
+# ---
 
-kind: pipeline
-type: docker
-name: parallel2
+# kind: pipeline
+# type: docker
+# name: parallel2
 
-steps:
-- &base
-  name: parallel2
-  image: golang
-  environment:
-    PARALLEL_NO: 3
-    JOB_NAME_PREFIX: parallel1-2
-    TYPE: step
-    INTEGROMAT_WEBHOOK_URL:
-      from_secret: INTEGROMAT_WEBHOOK_URL
-  commands:
-    - "./.ci/report.sh"
+# environment:
+#   JOB_NAME_PREFIX: parallel1-2
+#   TYPE: step
+#   INTEGROMAT_WEBHOOK_URL:
+#     from_secret: INTEGROMAT_WEBHOOK_URL
+
+# steps:
+# - &base
+#   name: parallel2
+#   image: golang
+#   environment:
+#     PARALLEL_NO: 3
+#   commands:
+#     - "./.ci/report.sh"
