@@ -1,6 +1,6 @@
 kind: pipeline
 type: docker
-name: parallel container
+name: parallel1
 
 environment:
   JOB_NAME_PREFIX: parallel1-1
@@ -26,7 +26,7 @@ steps:
 
 kind: pipeline
 type: docker
-name: parallel container
+name: parallel2
 
 environment:
   JOB_NAME_PREFIX: parallel1-2
