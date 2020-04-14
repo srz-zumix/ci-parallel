@@ -7,7 +7,7 @@ if [ "$PLATFORM" = "windows" ]; then
     DATE=$(date -u -Iseconds)
 fi
 
-if [ -z ${DRYRUN+x} ]; then
+if [ ! -z ${DRYRUN+x} ]; then
     echo curl \
     -H "Content-Type: application/json" \
     -X POST \
