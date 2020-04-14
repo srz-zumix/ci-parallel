@@ -5,8 +5,6 @@ name: parallel1
 environment:
   JOB_NAME_PREFIX: parallel1-1
   TYPE: step
-  INTEGROMAT_WEBHOOK_URL:
-    from_secret: INTEGROMAT_WEBHOOK_URL
 
 steps:
 - &base
@@ -14,6 +12,8 @@ steps:
   image: golang
   environment:
     PARALLEL_NO: "1"
+    INTEGROMAT_WEBHOOK_URL:
+      from_secret: INTEGROMAT_WEBHOOK_URL
   commands:
     - "./.ci/report.sh"
   depends_on: []
