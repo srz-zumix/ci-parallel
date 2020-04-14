@@ -15,11 +15,18 @@ steps:
     PARALLEL_NO: 1
   commands:
     - "./.ci/report.sh"
-  depends_on: []
 - <<: *base
   name: parallel1-2
   environment:
     PARALLEL_NO: 2
+  depends_on:
+    - parallel1-1
+- <<: *base
+  name: parallel1-3
+  environment:
+    PARALLEL_NO: 3
+  depends_on:
+    - parallel1-1
 
 ---
 
@@ -37,6 +44,6 @@ steps:
 - name: &base parallel2
   image: golang
   environment:
-    PARALLEL_NO: 3
+    PARALLEL_NO: 4
   commands:
     - "./.ci/report.sh"
