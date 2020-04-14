@@ -9,9 +9,9 @@ steps:
 environment:
     JOB_NAME_PREFIX: parallel1-1
     TYPE: step
+    PARALLEL_NO: "1"
     INTEGROMAT_WEBHOOK_URL:
       from_secret: INTEGROMAT_WEBHOOK_URL
-    PARALLEL_NO: "1"
   commands:
     - "./.ci/report.sh"
   depends_on: []
