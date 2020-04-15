@@ -34,7 +34,7 @@ environment:
 
 steps:
 - &base
-  name: parallel2
+  name: parallel2-1
   image: golang
   environment:
     PARALLEL_NO: 3
@@ -42,3 +42,32 @@ steps:
       from_secret: INTEGROMAT_WEBHOOK_URL
   commands:
     - "./.ci/report.sh"
+  depends_on: [ clone ]
+- <<: *base
+  name: parallel2-2
+  environment:
+    PARALLEL_NO: 4
+- <<: *base
+  name: parallel2-3
+  environment:
+    PARALLEL_NO: 5
+- <<: *base
+  name: parallel2-4
+  environment:
+    PARALLEL_NO: 6
+- <<: *base
+  name: parallel2-5
+  environment:
+    PARALLEL_NO: 7
+- <<: *base
+  name: parallel2-6
+  environment:
+    PARALLEL_NO: 8
+- <<: *base
+  name: parallel2-7
+  environment:
+    PARALLEL_NO: 9
+- <<: *base
+  name: parallel2-8
+  environment:
+    PARALLEL_NO: 10
