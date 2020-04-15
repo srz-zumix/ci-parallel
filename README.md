@@ -31,7 +31,7 @@ CI service parallel capability (FREE/OSS Plan)
 |[Cirrus CI](https://cirrus-ci.org/faq/#are-there-any-limits)|OSS|account|Linux: 8, Windows: 2, FreeBSD: 2, macOS: 1|-|13||
 |[Codefresh](https://codefresh.io/)|OSS|account|1|2|-|2||
 |[Codeship](https://codeship.com/)||
-|[Drone](https://cloud.drone.io/)|OSS|50+|50+|-|50+|limit nothing?|
+|[Drone](https://cloud.drone.io/)|OSS|account|50+|50+|-|50+|limit nothing?|
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|OSS|[account](https://github.blog/changelog/2019-10-28-github-actions-update-to-job-concurrency-usage-limits/)|20|-|-|20||
 |[Scrutinizer](https://scrutinizer-ci.com)||
 |[Semaphore 2.0](https://semaphoreci.com/product)|FREE||1|-|1|1||
