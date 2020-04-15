@@ -71,3 +71,43 @@ steps:
   name: parallel2-8
   environment:
     PARALLEL_NO: 10
+- <<: *base
+  name: parallel2-9
+  environment:
+    PARALLEL_NO: 11
+- <<: *base
+  name: parallel2-10
+  environment:
+    PARALLEL_NO: 12
+- <<: *base
+  name: parallel2-11
+  environment:
+    PARALLEL_NO: 13
+- <<: *base
+  name: parallel2-12
+  environment:
+    PARALLEL_NO: 14
+- <<: *base
+  name: parallel2-13
+  environment:
+    PARALLEL_NO: 15
+- <<: *base
+  name: parallel2-14
+  environment:
+    PARALLEL_NO: 16
+- <<: *base
+  name: parallel2-15
+  environment:
+    PARALLEL_NO: 17
+- <<: *base
+  name: parallel2-16
+  environment:
+    PARALLEL_NO: 18
+- <<: *base
+  name: parallel2-17
+  environment:
+    PARALLEL_NO: 19
+- <<: *base
+  name: parallel2-18
+  environment:
+    PARALLEL_NO: 20
