@@ -17,10 +17,10 @@ steps:
   commands:
     - "./.ci/report.sh"
   depends_on: []
-# - <<: *base
-#   name: parallel1-2
-#   environment:
-#     PARALLEL_NO: 2
+- <<: *base
+  name: parallel1-2
+  environment:
+    PARALLEL_NO: 2
 
 # ---
 
