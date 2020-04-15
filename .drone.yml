@@ -5,6 +5,7 @@ name: parallel1
 environment:
   JOB_NAME_PREFIX: parallel1
   TYPE: step
+  DRYRUN: "true"
 
 steps:
 - &base
@@ -31,6 +32,7 @@ name: parallel2
 environment:
   JOB_NAME_PREFIX: parallel2
   TYPE: step
+  DRYRUN: "true"
 
 steps:
 - &base
@@ -161,6 +163,7 @@ name: parallel3
 environment:
   JOB_NAME_PREFIX: parallel3
   TYPE: step
+  DRYRUN: "true"
 
 steps:
 - &base
@@ -210,7 +213,6 @@ steps:
   environment:
     PARALLEL_NO: 40
 
-
 ---
 
 kind: pipeline
@@ -220,6 +222,7 @@ name: parallel4
 environment:
   JOB_NAME_PREFIX: parallel4
   TYPE: step
+  DRYRUN: "true"
 
 steps:
 - &base

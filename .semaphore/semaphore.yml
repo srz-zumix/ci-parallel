@@ -24,6 +24,8 @@ global_job_config:
 blocks:
   - name: "parallel 1"
     dependencies: []
+    run: &run-condition
+      when: "change_in(['/.ci/', './semaphore.yml'])"
     task:
       secrets:
         - name: INTEGROMAT_WEBHOOK_URL_PARALLEL
@@ -36,6 +38,7 @@ blocks:
             - ./.ci/report.sh
   - name: "parallel 2"
     dependencies: []
+    run: *run-condition
     task:
       secrets:
         - name: INTEGROMAT_WEBHOOK_URL_PARALLEL
