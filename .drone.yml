@@ -150,4 +150,121 @@ steps:
 - <<: *base
   name: parallel2-28
   environment:
-    PARALLEL_NO: 20
+    PARALLEL_NO: 30
+
+---
+
+kind: pipeline
+type: docker
+name: parallel3
+
+environment:
+  JOB_NAME_PREFIX: parallel3
+  TYPE: step
+
+steps:
+- &base
+  name: parallel3-1
+  image: golang
+  environment:
+    PARALLEL_NO: 31
+    INTEGROMAT_WEBHOOK_URL:
+      from_secret: INTEGROMAT_WEBHOOK_URL
+  commands:
+    - "./.ci/report.sh"
+  depends_on: [ clone ]
+- <<: *base
+  name: parallel3-2
+  environment:
+    PARALLEL_NO: 32
+- <<: *base
+  name: parallel3-3
+  environment:
+    PARALLEL_NO: 33
+- <<: *base
+  name: parallel3-4
+  environment:
+    PARALLEL_NO: 34
+- <<: *base
+  name: parallel3-5
+  environment:
+    PARALLEL_NO: 35
+- <<: *base
+  name: parallel3-6
+  environment:
+    PARALLEL_NO: 36
+- <<: *base
+  name: parallel3-7
+  environment:
+    PARALLEL_NO: 37
+- <<: *base
+  name: parallel3-8
+  environment:
+    PARALLEL_NO: 38
+- <<: *base
+  name: parallel3-9
+  environment:
+    PARALLEL_NO: 39
+- <<: *base
+  name: parallel3-10
+  environment:
+    PARALLEL_NO: 40
+
+
+---
+
+kind: pipeline
+type: docker
+name: parallel4
+
+environment:
+  JOB_NAME_PREFIX: parallel4
+  TYPE: step
+
+steps:
+- &base
+  name: parallel4-1
+  image: golang
+  environment:
+    PARALLEL_NO: 41
+    INTEGROMAT_WEBHOOK_URL:
+      from_secret: INTEGROMAT_WEBHOOK_URL
+  commands:
+    - "./.ci/report.sh"
+  depends_on: [ clone ]
+- <<: *base
+  name: parallel4-2
+  environment:
+    PARALLEL_NO: 42
+- <<: *base
+  name: parallel4-3
+  environment:
+    PARALLEL_NO: 43
+- <<: *base
+  name: parallel4-4
+  environment:
+    PARALLEL_NO: 44
+- <<: *base
+  name: parallel4-5
+  environment:
+    PARALLEL_NO: 45
+- <<: *base
+  name: parallel4-6
+  environment:
+    PARALLEL_NO: 46
+- <<: *base
+  name: parallel4-7
+  environment:
+    PARALLEL_NO: 47
+- <<: *base
+  name: parallel4-8
+  environment:
+    PARALLEL_NO: 48
+- <<: *base
+  name: parallel4-9
+  environment:
+    PARALLEL_NO: 49
+- <<: *base
+  name: parallel4-10
+  environment:
+    PARALLEL_NO: 50
