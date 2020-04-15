@@ -3,7 +3,7 @@ type: docker
 name: parallel1
 
 environment:
-  JOB_NAME_PREFIX: parallel1-1
+  JOB_NAME_PREFIX: parallel1
   TYPE: step
 
 steps:
@@ -11,7 +11,7 @@ steps:
   name: parallel1-1
   image: golang
   environment:
-    PARALLEL_NO: "1"
+    PARALLEL_NO: 1
     INTEGROMAT_WEBHOOK_URL:
       from_secret: INTEGROMAT_WEBHOOK_URL
   commands:
@@ -22,23 +22,23 @@ steps:
   environment:
     PARALLEL_NO: 2
 
-# ---
+---
 
-# kind: pipeline
-# type: docker
-# name: parallel2
+kind: pipeline
+type: docker
+name: parallel2
 
-# environment:
-#   JOB_NAME_PREFIX: parallel1-2
-#   TYPE: step
-#   INTEGROMAT_WEBHOOK_URL:
-#     from_secret: INTEGROMAT_WEBHOOK_URL
+environment:
+  JOB_NAME_PREFIX: parallel2
+  TYPE: step
+  INTEGROMAT_WEBHOOK_URL:
+    from_secret: INTEGROMAT_WEBHOOK_URL
 
-# steps:
-# - &base
-#   name: parallel2
-#   image: golang
-#   environment:
-#     PARALLEL_NO: 3
-#   commands:
-#     - "./.ci/report.sh"
+steps:
+- &base
+  name: parallel2
+  image: golang
+  environment:
+    PARALLEL_NO: 3
+  commands:
+    - "./.ci/report.sh"
