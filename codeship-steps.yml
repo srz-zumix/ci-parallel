@@ -1,0 +1,12 @@
+- type: parallel
+  steps:
+    - name: parallel1
+      service: gcc
+      command: |
+        export PARALLEL_NO=1
+        /work/.ci/report.sh
+    - name: parallel2
+      service: gcc
+      command: |
+        export PARALLEL_NO=2
+        /work/.ci/report.sh
