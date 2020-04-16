@@ -2,7 +2,7 @@
   steps:
     - name: parallel1
       service: gcc
-      command: "export PARALLEL_NO=1 && /work/.ci/report.sh"
+      command: /work/.ci/report.sh 1
     - name: parallel2
       service: gcc
-      command: "export PARALLEL_NO=2 && /work/.ci/report.sh"
+      command: /work/.ci/report.sh 2

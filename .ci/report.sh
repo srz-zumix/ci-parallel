@@ -4,14 +4,14 @@ BASEDIR=$(dirname $0)
 
 . ${BASEDIR}/os-detect.sh
 
-echo ${PARALLEL_NO}
-
 . ${BASEDIR}/name.sh $1
 echo $CI_NAME
 
 if [ -z ${PARALLEL_NO+x} ]; then
-    export PARALLEL_NO=1
+    export PARALLEL_NO=$1
 fi
+
+echo ${PARALLEL_NO}
 
 if [ -z ${JOB_NAME_PREFIX+x} ]; then
     export JOB_NAME_PREFIX=${TYPE}
