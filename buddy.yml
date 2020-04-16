@@ -8,6 +8,13 @@
     working_directory: "/buddy/ci-parallel"
     docker_image_name: "library/gcc"
     docker_image_tag: "7"
+    variables:
+      - key: "PARALLEL_NO"
+        value: "1"
+        settable: false
+      - key: "TYPE"
+        value: "step"
+        settable: false
     execute_commands:
     - "./.ci/report.sh"
     mount_filesystem_path: "/buddy/ci-parallel"
