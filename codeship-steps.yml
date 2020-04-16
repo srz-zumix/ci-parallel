@@ -6,3 +6,9 @@
     - name: parallel2
       service: gcc
       command: /work/.ci/report.sh 2
+    - name: parallel3
+      service: gcc
+      command: /work/.ci/report.sh 3
+    - name: parallel4
+      service: gcc
+      command: /work/.ci/report.sh 4
