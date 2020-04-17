@@ -21,6 +21,8 @@ if [ -z ${REPORT_JOB_NAME+x} ]; then
   export REPORT_JOB_NAME="${JOB_NAME_PREFIX}-${PARALLEL_NO}"
 fi
 
+echo ${REPORT_JOB_NAME}
+
 if [ -z ${SLEEP_SECONDS+x} ]; then
   export SLEEP_SECONDS=180
 fi
