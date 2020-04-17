@@ -42,7 +42,7 @@
     - name: parallel13
       service: gcc
       command: /work/.ci/report.sh 13
-    - name: parallel4
+    - name: parallel14
       service: gcc
       command: /work/.ci/report.sh 14
     - name: parallel15
@@ -63,3 +63,93 @@
     - name: parallel20
       service: gcc
       command: /work/.ci/report.sh 20
+    - name: parallel21
+      service: gcc
+      command: /work/.ci/report.sh 21
+    - name: parallel22
+      service: gcc
+      command: /work/.ci/report.sh 22
+    - name: parallel23
+      service: gcc
+      command: /work/.ci/report.sh 23
+    - name: parallel24
+      service: gcc
+      command: /work/.ci/report.sh 24
+    - name: parallel25
+      service: gcc
+      command: /work/.ci/report.sh 25
+    - name: parallel26
+      service: gcc
+      command: /work/.ci/report.sh 26
+    - name: parallel27
+      service: gcc
+      command: /work/.ci/report.sh 27
+    - name: parallel28
+      service: gcc
+      command: /work/.ci/report.sh 28
+    - name: parallel29
+      service: gcc
+      command: /work/.ci/report.sh 29
+    - name: parallel30
+      service: gcc
+      command: /work/.ci/report.sh 30
+    - name: parallel31
+      service: gcc
+      command: /work/.ci/report.sh 31
+    - name: parallel32
+      service: gcc
+      command: /work/.ci/report.sh 32
+    - name: parallel33
+      service: gcc
+      command: /work/.ci/report.sh 33
+    - name: parallel34
+      service: gcc
+      command: /work/.ci/report.sh 34
+    - name: parallel35
+      service: gcc
+      command: /work/.ci/report.sh 35
+    - name: parallel36
+      service: gcc
+      command: /work/.ci/report.sh 36
+    - name: parallel37
+      service: gcc
+      command: /work/.ci/report.sh 37
+    - name: parallel38
+      service: gcc
+      command: /work/.ci/report.sh 38
+    - name: parallel39
+      service: gcc
+      command: /work/.ci/report.sh 39
+    - name: parallel40
+      service: gcc
+      command: /work/.ci/report.sh 40
+    - name: parallel41
+      service: gcc
+      command: /work/.ci/report.sh 41
+    - name: parallel42
+      service: gcc
+      command: /work/.ci/report.sh 42
+    - name: parallel43
+      service: gcc
+      command: /work/.ci/report.sh 43
+    - name: parallel44
+      service: gcc
+      command: /work/.ci/report.sh 44
+    - name: parallel45
+      service: gcc
+      command: /work/.ci/report.sh 45
+    - name: parallel46
+      service: gcc
+      command: /work/.ci/report.sh 46
+    - name: parallel47
+      service: gcc
+      command: /work/.ci/report.sh 47
+    - name: parallel48
+      service: gcc
+      command: /work/.ci/report.sh 48
+    - name: parallel49
+      service: gcc
+      command: /work/.ci/report.sh 49
+    - name: parallel50
+      service: gcc
+      command: /work/.ci/report.sh 50

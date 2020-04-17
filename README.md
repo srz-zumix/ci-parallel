@@ -7,7 +7,7 @@
 [![CircleCI](https://circleci.com/gh/srz-zumix/ci-parallel/tree/master.svg?style=svg)](https://circleci.com/gh/srz-zumix/ci-parallel/tree/master)
 [![Cirrus Build Status](https://api.cirrus-ci.com/github/srz-zumix/ci-parallel.svg?branch=master)](https://cirrus-ci.com/github/srz-zumix/ci-parallel/master)
 [![Codefresh build status](https://g.codefresh.io/api/badges/pipeline/srz-zumix/ci-specs%2Fci-parallel?type=cf-2)](https://g.codefresh.io/public/accounts/srz-zumix/pipelines/5e7f5638788e8900ac585a80)
-<!-- [![Codeship Status for srz-zumix/ci-parallel](https://app.codeship.com/projects/265ea250-042c-0138-e6ba-0e8ba424c4b4/status?branch=master)](https://app.codeship.com/projects/378730) -->
+[![Codeship Status for srz-zumix/ci-parallel](https://app.codeship.com/projects/3136a0f0-6205-0138-6782-6a82d9037675/status?branch=master)](https://app.codeship.com/projects/392920)
 [![Drone Build Status](https://cloud.drone.io/api/badges/srz-zumix/ci-parallel/status.svg?branch=master)](https://cloud.drone.io/srz-zumix/ci-parallel)
 [![GitHub Actions Status](https://github.com/srz-zumix/ci-parallel/workflows/GitHub%20Actions/badge.svg?branch=master)](https://github.com/srz-zumix/ci-parallel/actions?query=workflow%3A%22GitHub+Actions%22)
 <!-- [![Peakflow Build Status](https://www.peakflow.io/en/projects/ci-parallel/branch-statuses/master.svg)](https://www.peakflow.io/en/projects/ci-parallel/build-groups?build_groups_q%5Bbranch_name_cont%5D=master) -->
@@ -29,7 +29,7 @@ CI service parallel capability (FREE/OSS Plan)
 |[CircleCI](https://circleci.com/pricing/)|OSS|account|1|1|4|4||
 |[Cirrus CI](https://cirrus-ci.org/faq/#are-there-any-limits)|OSS|account|Linux: 8, Windows: 2, FreeBSD: 2, macOS: 1|-|-|13||
 |[Codefresh](https://codefresh.io/)|OSS|account|1|2|-|2||
-|[Codeship](https://codeship.com/)||
+|[Codeship Pro](https://codeship.com/)|OSS||1||-|||
 |[Drone](https://cloud.drone.io/)|OSS|account|50+|50+|-|50+|limit nothing?|
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|OSS|[account](https://github.blog/changelog/2019-10-28-github-actions-update-to-job-concurrency-usage-limits/)|20|-|-|20||
 |[Scrutinizer](https://scrutinizer-ci.com)||
