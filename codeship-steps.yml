@@ -153,3 +153,9 @@
     - name: parallel50
       service: gcc
       command: /work/.ci/report.sh 50
+    - name: parallel51
+      service: gcc
+      command: /work/.ci/report.sh 51
+    - name: parallel52
+      service: gcc
+      command: /work/.ci/report.sh 52
