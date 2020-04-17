@@ -12,3 +12,18 @@
     - name: parallel4
       service: gcc
       command: /work/.ci/report.sh 4
+
+- type: parallel
+  steps:
+    - name: parallel5
+      service: gcc
+      command: /work/.ci/report.sh 5
+    - name: parallel6
+      service: gcc
+      command: /work/.ci/report.sh 6
+    - name: parallel7
+      service: gcc
+      command: /work/.ci/report.sh 7
+    - name: parallel8
+      service: gcc
+      command: /work/.ci/report.sh 8
