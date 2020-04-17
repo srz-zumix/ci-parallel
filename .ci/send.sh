@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# DATE=$(TZ="Asia/Tokyo" date)
 DATE=$(date -u)
 
 if [ "$PLATFORM" = "windows" ]; then
