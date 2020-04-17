@@ -6,15 +6,15 @@
     - name: parallel2
       service: gcc
       command: /work/.ci/report.sh 2
+
+- type: parallel
+  steps:
     - name: parallel3
       service: gcc
       command: /work/.ci/report.sh 3
     - name: parallel4
       service: gcc
       command: /work/.ci/report.sh 4
-
-- type: parallel
-  steps:
     - name: parallel5
       service: gcc
       command: /work/.ci/report.sh 5
@@ -27,3 +27,39 @@
     - name: parallel8
       service: gcc
       command: /work/.ci/report.sh 8
+    - name: parallel9
+      service: gcc
+      command: /work/.ci/report.sh 9
+    - name: parallel10
+      service: gcc
+      command: /work/.ci/report.sh 10
+    - name: parallel11
+      service: gcc
+      command: /work/.ci/report.sh 11
+    - name: parallel12
+      service: gcc
+      command: /work/.ci/report.sh 12
+    - name: parallel13
+      service: gcc
+      command: /work/.ci/report.sh 13
+    - name: parallel4
+      service: gcc
+      command: /work/.ci/report.sh 14
+    - name: parallel15
+      service: gcc
+      command: /work/.ci/report.sh 15
+    - name: parallel16
+      service: gcc
+      command: /work/.ci/report.sh 16
+    - name: parallel17
+      service: gcc
+      command: /work/.ci/report.sh 17
+    - name: parallel18
+      service: gcc
+      command: /work/.ci/report.sh 18
+    - name: parallel19
+      service: gcc
+      command: /work/.ci/report.sh 19
+    - name: parallel20
+      service: gcc
+      command: /work/.ci/report.sh 20
