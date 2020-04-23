@@ -20,9 +20,11 @@ build:
             -
               command: ./.ci/report.sh 1
               on_node: 1
+              idle_timeout: 600
             -
               command: ./.ci/report.sh 2
               on_node: 2
+              idle_timeout: 600
 filter:
   excluded_paths:
     - '*/test/*'
