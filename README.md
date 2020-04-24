@@ -32,7 +32,7 @@ CI service parallel capability (FREE/OSS Plan)
 |[CodeShip Pro](https://codeship.com/)|OSS|project|1|50+|-|50+ (* Projects)|limit nothing?|
 |[Drone](https://cloud.drone.io/)|OSS|project|50+|50+|-|50+ (* Projects)|limit nothing?|
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|OSS|[account](https://github.blog/changelog/2019-10-28-github-actions-update-to-job-concurrency-usage-limits/)|20|-|-|20||
-|[Scrutinizer](https://scrutinizer-ci.com)||
+|[Scrutinizer](https://scrutinizer-ci.com/docs/build/running_tests_in_parallel)|OSS|account|1|1|-|1||
 |[Semaphore 2.0](https://semaphoreci.com/product)|FREE|organization|1|-|1|1||
 |[Semaphore 2.0](https://semaphoreci.com/product)|OSS|organization|4|-|4|4||
 |[Shippable](http://shippable.com)|OSS|account|1|-|-|1||
@@ -112,6 +112,11 @@ CI サービスの中には特定の処理を複数並列実行させる機能�
 
 [GitHubActions.json](./record/GitHubActions.json)
 ![GitHubActions](./record/images/GitHubActions.png)
+
+## Scrutinizer
+
+[Scrutinizer.json](./record/Scrutinizer.json)
+![Scrutinizer](./record/images/Scrutinizer.png)
 
 ## Semaphore
 

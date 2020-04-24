@@ -6,6 +6,7 @@ build:
     environment:
       variables:
         TYPE: 'step'
+        DRYRUN: 'true'
     nodes:
       analysis:
         project_setup:
