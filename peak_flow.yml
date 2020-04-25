@@ -1,3 +1,15 @@
-script:
-  - export TYPE=job
-  - ./.ci/report.sh 1
+builds:
+  build_1:
+    name: parallel 1
+    environment:
+      TYPE: job
+      PRALLEL_NO: 1
+    script:
+      - ./.ci/report.sh
+  build_2:
+    name: parallel 2
+    environment:
+      TYPE: job
+      PRALLEL_NO: 2
+    script:
+      - ./.ci/report.sh
