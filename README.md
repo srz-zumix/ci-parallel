@@ -10,6 +10,7 @@
 [![Codeship Status for srz-zumix/ci-parallel](https://app.codeship.com/projects/3136a0f0-6205-0138-6782-6a82d9037675/status?branch=master)](https://app.codeship.com/projects/392920)
 [![Drone Build Status](https://cloud.drone.io/api/badges/srz-zumix/ci-parallel/status.svg?branch=master)](https://cloud.drone.io/srz-zumix/ci-parallel)
 [![GitHub Actions Status](https://github.com/srz-zumix/ci-parallel/workflows/GitHub%20Actions/badge.svg?branch=master)](https://github.com/srz-zumix/ci-parallel/actions?query=workflow%3A%22GitHub+Actions%22)
+[![Peakflow Build Status](https://www.peakflow.io/en/projects/ci-parallel/branch-statuses/master.svg)](https://www.peakflow.io/en/projects/ci-parallel/build-groups?build_groups_q%5Bbranch_name_cont%5D=master)
 [![Scrutinizer Build Status](https://scrutinizer-ci.com/g/srz-zumix/ci-parallel/badges/build.png?b=master)](https://scrutinizer-ci.com/g/srz-zumix/ci-parallel/build-status/master)
 [![Semaphore 2.0 Build Status](https://srz-zumix.semaphoreci.com/badges/ci-parallel/branches/master.svg)](https://srz-zumix.semaphoreci.com/projects/ci-parallel)
 [![Shippable Run Status](https://api.shippable.com/projects/5e81da2c352a0d0007594420/badge?branch=master)](https://app.shippable.com/github/srz-zumix/ci-parallel)
@@ -31,6 +32,7 @@ CI service parallel capability (FREE/OSS Plan)
 |[CodeShip Pro](https://codeship.com/)|OSS|project|1|50+|-|50+ (* Projects)|limit nothing?|
 |[Drone](https://cloud.drone.io/)|OSS|project|50+|50+|-|50+ (* Projects)|limit nothing?|
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|OSS|[account](https://github.blog/changelog/2019-10-28-github-actions-update-to-job-concurrency-usage-limits/)|20|-|-|20||
+|[Peakflow](https://www.peakflow.io/)|FREE|project|1|1|-|1||
 |[Scrutinizer](https://scrutinizer-ci.com/docs/build/running_tests_in_parallel)|OSS|account|1|1|-|1||
 |[Semaphore 2.0](https://semaphoreci.com/product)|FREE|organization|1|-|1|1||
 |[Semaphore 2.0](https://semaphoreci.com/product)|OSS|organization|4|-|4|4||
@@ -111,6 +113,11 @@ CI サービスの中には特定の処理を複数並列実行させる機能�
 
 [GitHubActions.json](./record/GitHubActions.json)
 ![GitHubActions](./record/images/GitHubActions.png)
+
+## Peakflow
+
+[Peakflow.json](./record/Peakflow.json)
+![Peakflow](./record/images/Peakflow.png)
 
 ## Scrutinizer
 
