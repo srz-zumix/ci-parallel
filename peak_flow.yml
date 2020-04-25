@@ -3,13 +3,13 @@ builds:
     name: parallel 1
     environment:
       TYPE: job
-      PRALLEL_NO: 1
+      PARALLEL_NO: 1
     script:
       - ./.ci/report.sh
   build_2:
     name: parallel 2
     environment:
       TYPE: job
-      PRALLEL_NO: 2
+      PARALLEL_NO: 2
     script:
       - ./.ci/report.sh
