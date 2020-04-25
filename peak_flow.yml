@@ -1,0 +1,3 @@
+script:
+  - export TYPE=job
+  - ./.ci/report.sh 1
