@@ -42,5 +42,5 @@ steps:
   env:
     INTEGROMAT_WEBHOOK_URL: $(INTEGROMAT_WEBHOOK_URL)
     TYPE: step
-    # DRYRUN: "true"
+    DRYRUN: "true"
   displayName: 'parallel'
