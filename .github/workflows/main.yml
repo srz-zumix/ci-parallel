@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@master
       - name: parallel
         env:
-          DRYRUN: "true"
+          # DRYRUN: "true"
           TYPE: job
           PARALLEL_NO: ${{ matrix.no }}
           INTEGROMAT_WEBHOOK_URL: ${{ secrets.INTEGROMAT_WEBHOOK }}

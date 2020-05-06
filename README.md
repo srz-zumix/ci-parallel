@@ -37,7 +37,7 @@ CI service parallel capability (FREE/OSS Plan)
 |[Semaphore 2.0](https://semaphoreci.com/product)|FREE|organization|1|-|1|1||
 |[Semaphore 2.0](https://semaphoreci.com/product)|OSS|organization|4|-|4|4||
 |[Shippable](http://shippable.com)|OSS|account|1|-|-|1||
-|[Travis CI](https://travis-ci.com/)|OSS|account|3|-|-|3||
+|[Travis CI](https://travis-ci.com/)|OSS|account|5|-|-|5||
 |[wercker](http://www.wercker.com/)|OSS|project|2|-|-|2 (* Projects)||
 
 ## Concurrency Job
