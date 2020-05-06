@@ -29,6 +29,10 @@ strategy:
       PARALLEL_NO: 9
     Build10:
       PARALLEL_NO: 10
+    Build11:
+      PARALLEL_NO: 11
+    Build12:
+      PARALLEL_NO: 12
 
 pool:
   vmImage: ubuntu-latest
