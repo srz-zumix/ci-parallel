@@ -25,14 +25,14 @@ CI service parallel capability (FREE/OSS Plan)
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|OSS|project|10|-|-|10 (* Projects)||
 |[Bitrise](https://www.bitrise.io)|OSS|project|1|-|-|1 (* Projects)|[Starting parallel builds with a single trigger](https://devcenter.bitrise.io/builds/triggering-builds/trigger-multiple-workflows/)|
 |[Buddy](https://buddy.works)|OSS|account|1|1|-|1||
-|[CircleCI](https://circleci.com/pricing/)|FREE|account|1|1|1|1||
-|[CircleCI](https://circleci.com/pricing/)|OSS|account|1|1|4|4||
+|[CircleCI](https://circleci.com/pricing/)|FREE|account|1|-|1|1||
+|[CircleCI](https://circleci.com/pricing/)|OSS|account|1|-|4|4||
 |[Cirrus CI](https://cirrus-ci.org/faq/#are-there-any-limits)|OSS|account|Linux: 8, Windows: 2, FreeBSD: 2, macOS: 1|-|-|13||
 |[Codefresh](https://codefresh.io/)|OSS|account|1|2|-|2||
 |[CodeShip Pro](https://codeship.com/)|OSS|project|1|50+|-|50+ (* Projects)|limit nothing?|
 |[Drone](https://cloud.drone.io/)|OSS|project|50+|50+|-|50+ (* Projects)|limit nothing?|
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|OSS|[account](https://github.blog/changelog/2019-10-28-github-actions-update-to-job-concurrency-usage-limits/)|20|-|-|20||
-|[Peakflow](https://www.peakflow.io/)|FREE|project|1|1|-|1||
+|[Peakflow](https://www.peakflow.io/)|FREE|project|1|1|-|1 (* Projects)||
 |[Scrutinizer](https://scrutinizer-ci.com/docs/build/running_tests_in_parallel)|OSS|account|1|1|-|1||
 |[Semaphore 2.0](https://semaphoreci.com/product)|FREE|organization|1|-|1|1||
 |[Semaphore 2.0](https://semaphoreci.com/product)|OSS|organization|4|-|4|4||
