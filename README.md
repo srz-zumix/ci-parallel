@@ -17,7 +17,7 @@
 [![Travis-CI Build Status](https://travis-ci.com/srz-zumix/ci-parallel.svg?branch=master)](https://travis-ci.com/srz-zumix/ci-parallel)
 [![wercker status](https://app.wercker.com/status/285dae1f97ed665286a2f325e29c4325/s/master "wercker status")](https://app.wercker.com/project/byKey/285dae1f97ed665286a2f325e29c4325)
 
-CI service parallel capability (FREE/OSS Plan)
+## CI service parallel capability (FREE/OSS Plan)
 
 |CI|Plan|Limit to|Concurrency Job|Concurrency Step in Job|Parallelism|Max|Note|
 |:--|:--|:--|:--|:--|:--|:--|:--|
@@ -40,106 +40,110 @@ CI service parallel capability (FREE/OSS Plan)
 |[Travis CI](https://travis-ci.com/)|OSS|account|5(+2?)|-|-|5(+2?)|[Concurrency for open source projects](https://travis-ci.community/t/concurrency-for-open-source-projects/3827)|
 |[wercker](http://www.wercker.com/)|OSS|project|2|-|-|2 (* Projects)||
 
-## Concurrency Job
+### Concurrency Job
 
 ジョブの並行実行可能数
 ここでいうジョブは各 CI サービスが定義するジョブを直接指すものではありません。
 ここでのジョブは CI のフロー構成のうちトップレベルの構造を指すものです。
 
-## Concurrency Step in Job
+### Concurrency Step in Job
 
 ジョブ中のステップの並行実行可能数。
 ここでいうステップは各 CI サービスが定義するステップを直接指すものではありません。
 ここでのステップは CI のフロー構成のうち子レベルの構造を指すものです。
 
-## Parallelism
+### Parallelism
 
 CI サービスの中には特定の処理を複数並列実行させる機能がある場合があります。
 （インデックス環境変数が与えられた処理がそれぞれ実行される）
 その上限。
 
-## Max
+### Max
 
 各レベルを合算した場合の並行実行可能数の最大。
 
-# Preview parallel
+## Visualize parallel
 
 1. download json
 2. open google chrome
 3. open [chrome://tracing](chrome://tracing/)
 4. load json
 
-## AppVeyor
+### AppVeyor
 
 [AppVeyor.json](./record/AppVeyor.json)
 ![AppVeyor](./record/images/AppVeyor.png)
 
-## Azure Pipelines
+### Azure Pipelines
 
 [AzurePipelines.json](./record/AzurePipelines.json)
 ![AzurePipelines](./record/images/AzurePipelines.png)
 
-## Bitrise
+### Bitrise
 
 [Bitrise.json](./record/Bitrise.json)
 ![Bitrise](./record/images/Bitrise.png)
 
-## CircleCI
+### CircleCI
 
 [CircleCI.json](./record/CircleCI.json)
 ![CircleCI](./record/images/CircleCI.png)
 
-## Cirrus CI
+### Cirrus CI
 
 [CirrusCI.json](./record/CirrusCI.json)
 ![CirrusCI](./record/images/CirrusCI.png)
 
-## Codefresh
+### Codefresh
 
 [Codefresh.json](./record/Codefresh.json)
 ![Codefresh](./record/images/Codefresh.png)
 
-## CodeShip
+### CodeShip
 
 [CodeShip.json](./record/CodeShip.json)
 ![CodeShip](./record/images/CodeShip.png)
 
-## Drone
+### Drone
 
 [Drone.json](./record/Drone.json)
 ![Drone](./record/images/Drone.png)
 
-## GitHub Actions
+### GitHub Actions
 
 [GitHubActions.json](./record/GitHubActions.json)
 ![GitHubActions](./record/images/GitHubActions.png)
 
-## Peakflow
+### Peakflow
 
 [Peakflow.json](./record/Peakflow.json)
 ![Peakflow](./record/images/Peakflow.png)
 
-## Scrutinizer
+### Scrutinizer
 
 [Scrutinizer.json](./record/Scrutinizer.json)
 ![Scrutinizer](./record/images/Scrutinizer.png)
 
-## Semaphore
+### Semaphore
 
 [Semaphore.json](./record/Semaphore.json)
 ![Semaphore](./record/images/Semaphore.png)
 
-## Shippable
+### Shippable
 
 [Shippable.json](./record/Shippable.json)
 ![Shippable](./record/images/Shippable.png)
 
-## Travis CI
+### Travis CI
 
 [TravisCI.json](./record/TravisCI.json)
 ![TravisCI](./record/images/TravisCI.png)
 
-## Wercker
+### Wercker
 
 [Wercker.json](./record/Wercker.json)
 ![Wercker](./record/images/Wercker.png)
+
+## Repository for CI service specification survey
+
+* [ci-specs](https://github.com/srz-zumix/ci-specs)
