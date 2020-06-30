@@ -30,7 +30,7 @@
 |[Cirrus CI](https://cirrus-ci.org/faq/#are-there-any-limits)|OSS|account|Linux: 8, Windows: 2, FreeBSD: 2, macOS: 1|-|-|13||
 |[Codefresh](https://codefresh.io/)|OSS|account|1|2|-|2||
 |[CodeShip Pro](https://codeship.com/)|OSS|project|1|50+|-|50+ (* Projects)|limit nothing?|
-|[Drone](https://cloud.drone.io/)|OSS|project|50+|50+|-|50+ (* Projects)|limit nothing?|
+|[Drone](https://cloud.drone.io/)|OSS|limit nothing?|50+|50+|-|50+|limit nothing?|
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|OSS|[account](https://github.blog/changelog/2019-10-28-github-actions-update-to-job-concurrency-usage-limits/)|20|-|-|20||
 |[Peakflow](https://www.peakflow.io/)|FREE|project|1|1|-|1 (* Projects)||
 |[Scrutinizer](https://scrutinizer-ci.com/docs/build/running_tests_in_parallel)|OSS|account|1|1|-|1||
