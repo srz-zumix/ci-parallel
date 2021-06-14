@@ -1,0 +1,41 @@
+resources:
+  - name: ci_parallel_gitRepo
+    type: GitRepo
+    configuration:
+      gitProvider: GitHub
+      path: srz-zumix/ci-parallel
+      branches:
+        include: master|^feature/.*|^jfrog/.*
+pipelines:
+  - name: ci_parallel
+    configuration:
+      nodePool: parallel
+    steps:
+      - name: spec
+        type: Bash
+        configuration:
+          inputResources:
+            - name: ci_parallel_gitRepo
+        stepletMultipliers:
+            - PARALLEL_NO: 1
+            - PARALLEL_NO: 2
+            - PARALLEL_NO: 3
+            - PARALLEL_NO: 4
+            # - PARALLEL_NO: 5
+            # - PARALLEL_NO: 6
+            # - PARALLEL_NO: 7
+            # - PARALLEL_NO: 8
+            # - PARALLEL_NO: 9
+            # - PARALLEL_NO: 10
+        execution:
+          onStart:
+          - update_commit_status ci_parallel_gitRepo # Status: "processing"
+          onExecute:
+            - update_commit_status ci_parallel_gitRepo # Status: "processing"
+            - pushd ${res_ci_parallel_gitRepo_resourcePath}
+            - ./.ci/report.sh
+            - popd
+          onFailure:
+            - update_commit_status ci_parallel_gitRepo # Status: "failure"
+          onSuccess:
+            - update_commit_status ci_parallel_gitRepo # Status: "success"
