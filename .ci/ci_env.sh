@@ -3,6 +3,6 @@
 BASEDIR=$(dirname $0)
 
 if [ ! -f ${BASEDIR}/ci-normalize-envvars/ci-env.sh ]; then
-    (cd ".."; git submodule update --init --recursive)
+    (cd "${BASEDIR}/.."; git submodule update --init --recursive)
 fi
 . ${BASEDIR}/ci-normalize-envvars/ci-env.sh
