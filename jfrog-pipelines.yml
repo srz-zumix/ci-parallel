@@ -38,6 +38,7 @@ pipelines:
           onExecute:
             - update_commit_status ci_parallel_gitRepo # Status: "processing"
             - pushd ${res_ci_parallel_gitRepo_resourcePath}
+            - export INTEGROMAT_WEBHOOK_URL=${int_ci_parallel_envs_INTEGROMAT_WEBHOOK_URL}
             - TYPE=step ./.ci/report.sh
             - popd
           onFailure:
