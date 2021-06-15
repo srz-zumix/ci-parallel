@@ -22,7 +22,6 @@ steps:
     image: codefresh/cfstep-gitsubmodules
     stage: prepare
     working_directory: '${{clone}}'
-    when: *skip-condition
   ParallelTests1:
     type: parallel
     stage: parallel
