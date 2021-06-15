@@ -6,6 +6,7 @@ if [ "$PLATFORM" = "windows" ]; then
     DATE=$(date -u -Iseconds)
 fi
 
+DRYRUN=true
 if [ -z ${DRYRUN+x} ]; then
     curl \
         -H "Content-Type: application/json" \
