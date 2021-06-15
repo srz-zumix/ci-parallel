@@ -20,6 +20,7 @@ steps:
             includes(lower("${{CF_COMMIT_MESSAGE}}"), "[skip ci]") == false
   updateSubmodules:
     image: codefresh/cfstep-gitsubmodules
+    stage: prepare
     environment:
       - CF_SUBMODULE_SYNC=true
       - CF_SUBMODULE_UPDATE_RECURSIVE=true
