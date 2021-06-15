@@ -11,8 +11,9 @@ pipelines:
     configuration:
       nodePool: parallel
     steps:
-      - name: spec
-        type: Bash
+      - name: parallel
+        type: Matrix
+        stepMode: Bash
         configuration:
           inputResources:
             - name: ci_parallel_gitRepo
