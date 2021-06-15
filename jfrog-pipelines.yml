@@ -15,6 +15,7 @@ pipelines:
         type: Matrix
         stepMode: Bash
         configuration:
+          # multiNode: true
           inputResources:
             - name: ci_parallel_gitRepo
           integrations:
