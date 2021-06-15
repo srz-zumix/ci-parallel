@@ -5,7 +5,7 @@ BASEDIR=$(dirname $0)
 . ${BASEDIR}/os-detect.sh
 
 . ${BASEDIR}/ci_env.sh
-echo $CI_NAME
+echo $CI_ENV_NAME
 
 if [ -z ${PARALLEL_NO+x} ]; then
     export PARALLEL_NO=$1
