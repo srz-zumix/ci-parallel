@@ -23,6 +23,10 @@ fi
 
 echo ${REPORT_JOB_NAME}
 
+echo ==== ENV ====
+env
+echo =============
+
 if [ -z ${SLEEP_SECONDS+x} ]; then
   export SLEEP_SECONDS=180
 fi
