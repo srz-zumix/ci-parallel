@@ -55,6 +55,7 @@ cirrus_freebsd_task:
     TYPE: job
     SLEEP_SECONDS: 360
     JOB_NAME_PREFIX: ${CIRRUS_TASK_NAME}
+  install_script: pkg install -y git
   prallel_script: ./.ci/report.sh
 
 cirrus_windows_task:

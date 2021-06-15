@@ -1,6 +1,7 @@
 version: '1.0'
 stages:
   - checkout
+  - prepare
   - parallel
 
 steps:
@@ -17,6 +18,11 @@ steps:
             includes(lower("${{CF_COMMIT_MESSAGE}}"), "[ci skip]") == false
           noSkipCiInCommitMessageSkipCI: |
             includes(lower("${{CF_COMMIT_MESSAGE}}"), "[skip ci]") == false
+  updateSubmodules:
+    image: codefresh/cfstep-gitsubmodules
+    stage: prepare
+    working_directory: '${{clone}}'
+    when: *skip-condition
   ParallelTests1:
     type: parallel
     stage: parallel
