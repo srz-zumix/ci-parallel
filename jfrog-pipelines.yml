@@ -17,6 +17,8 @@ pipelines:
         configuration:
           inputResources:
             - name: ci_parallel_gitRepo
+          integrations:
+            - name: ci_parallel_envs
         stepletMultipliers:
           environmentVariables:
             - PARALLEL_NO: 1

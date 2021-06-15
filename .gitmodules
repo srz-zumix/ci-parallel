@@ -1,0 +1,3 @@
+[submodule ".ci/ci-normalize-envvars"]
+	path = .ci/ci-normalize-envvars
+	url = https://github.com/srz-zumix/ci-normalize-envvars.git
