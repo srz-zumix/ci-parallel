@@ -38,7 +38,7 @@ pipelines:
           onExecute:
             - update_commit_status ci_parallel_gitRepo # Status: "processing"
             - pushd ${res_ci_parallel_gitRepo_resourcePath}
-            - ./.ci/report.sh
+            - JOB_NAME_PREFIX=matrix ./.ci/report.sh
             - popd
           onFailure:
             - update_commit_status ci_parallel_gitRepo # Status: "failure"
