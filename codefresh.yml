@@ -20,8 +20,9 @@ steps:
             includes(lower("${{CF_COMMIT_MESSAGE}}"), "[skip ci]") == false
   updateSubmodules:
     image: codefresh/cfstep-gitsubmodules
-    stage: prepare
-    working_directory: '${{clone}}'
+    environment:
+      - CF_SUBMODULE_SYNC=true
+      - CF_SUBMODULE_UPDATE_RECURSIVE=true
   ParallelTests1:
     type: parallel
     stage: parallel
