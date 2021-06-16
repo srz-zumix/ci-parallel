@@ -32,11 +32,11 @@
 |[CodeShip Pro](https://codeship.com/)|OSS|project|1|50+|-|50+ (* Projects)|limit nothing?|
 |[Drone](https://cloud.drone.io/)|OSS|limit nothing?|50+|50+|-|50+|limit nothing?|
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|OSS|[account](https://github.blog/changelog/2019-10-28-github-actions-update-to-job-concurrency-usage-limits/)|20|-|-|20||
-|[Peakflow](https://www.peakflow.io/)|FREE|project|1|1|-|1 (* Projects)||
+|[JFrog Pipelines][]|FREE|nodepool|-|just want|-|just want|[limit to node pool max](https://www.jfrog.com/confluence/display/JFROG/Managing+Pipelines+Node+Pools)|
+|[Peakflow][]|FREE|project|1|1|-|1 (* Projects)||
 |[Scrutinizer](https://scrutinizer-ci.com/docs/build/running_tests_in_parallel)|OSS|account|1|1|-|1||
 |[Semaphore 2.0](https://semaphoreci.com/product)|FREE|organization|1|-|1|1||
 |[Semaphore 2.0](https://semaphoreci.com/product)|OSS|organization|4|-|4|4||
-|[Shippable](http://shippable.com)|OSS|account|1|-|-|1||
 |[Travis CI](https://travis-ci.com/)|OSS|account|5(+2?)|-|-|5(+2?)|[Concurrency for open source projects](https://travis-ci.community/t/concurrency-for-open-source-projects/3827)|
 |[wercker](http://www.wercker.com/)|OSS|project|2|-|-|2 (* Projects)||
 
@@ -114,6 +114,11 @@ CI サービスの中には特定の処理を複数並列実行させる機能�
 [GitHubActions.json](./record/GitHubActions.json)
 ![GitHubActions](./record/images/GitHubActions.png)
 
+### Shippable
+
+[JFrogPipelines.json](./record/JFrogPipelines.json)
+![JFrog Pipelines](./record/images/JFrogPipelines.png)
+
 ### Peakflow
 
 [Peakflow.json](./record/Peakflow.json)
@@ -129,11 +134,6 @@ CI サービスの中には特定の処理を複数並列実行させる機能�
 [Semaphore.json](./record/Semaphore.json)
 ![Semaphore](./record/images/Semaphore.png)
 
-### Shippable
-
-[Shippable.json](./record/Shippable.json)
-![Shippable](./record/images/Shippable.png)
-
 ### Travis CI
 
 [TravisCI.json](./record/TravisCI.json)
@@ -147,3 +147,24 @@ CI サービスの中には特定の処理を複数並列実行させる機能�
 ## Repository for CI service specification survey
 
 * [ci-specs](https://github.com/srz-zumix/ci-specs)
+
+[Appcircle]:https://appcircle.io/
+[AppVeyor]:https://www.appveyor.com
+[Azure Pipelines]:https://azure.microsoft.com/ja-jp/services/devops/pipelines/
+[Bitrise]:https://www.bitrise.io
+[Buddy]:https://buddy.works
+[CircleCI]:https://circleci.com
+[Cirrus CI]:https://cirrus-ci.org/
+[Codefresh]:https://codefresh.io/
+[Codeship]:https://codeship.com/
+[Codeship Basic]:https://codeship.com/
+[Codeship Pro]:https://codeship.com/
+[Drone]:https://cloud.drone.io/
+[GitHub Actions]:https://help.github.com/en/articles/about-github-actions
+[JFrog Pipelines]:https://www.jfrog.com/confluence/display/JFROG/JFrog+Pipelines
+[Peakflow]:https://www.peakflow.io/
+[Razorops]:https://razorops.com/
+[Scrutinizer]:https://scrutinizer-ci.com
+[Semaphore]:https://semaphoreci.com/
+[Travis CI]:https://travis-ci.com/
+[wercker]:http://www.wercker.com/
