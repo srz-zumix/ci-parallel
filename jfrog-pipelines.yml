@@ -45,7 +45,7 @@ pipelines:
             - PARALLEL_NO: 21
         execution:
           onStart:
-          - update_commit_status ci_parallel_gitRepo # Status: "processing"
+            - update_commit_status ci_parallel_gitRepo # Status: "processing"
           onExecute:
             - update_commit_status ci_parallel_gitRepo # Status: "processing"
             - pushd ${res_ci_parallel_gitRepo_resourcePath}
