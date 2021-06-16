@@ -13,7 +13,6 @@
 [![Peakflow Build Status](https://www.peakflow.io/en/projects/ci-parallel/branch-statuses/master.svg)](https://www.peakflow.io/en/projects/ci-parallel/build-groups?build_groups_q%5Bbranch_name_cont%5D=master)
 [![Scrutinizer Build Status](https://scrutinizer-ci.com/g/srz-zumix/ci-parallel/badges/build.png?b=master)](https://scrutinizer-ci.com/g/srz-zumix/ci-parallel/build-status/master)
 [![Semaphore 2.0 Build Status](https://srz-zumix.semaphoreci.com/badges/ci-parallel/branches/master.svg)](https://srz-zumix.semaphoreci.com/projects/ci-parallel)
-[![Shippable Run Status](https://api.shippable.com/projects/5e81da2c352a0d0007594420/badge?branch=master)](https://app.shippable.com/github/srz-zumix/ci-parallel)
 [![Travis-CI Build Status](https://travis-ci.com/srz-zumix/ci-parallel.svg?branch=master)](https://travis-ci.com/srz-zumix/ci-parallel)
 [![wercker status](https://app.wercker.com/status/285dae1f97ed665286a2f325e29c4325/s/master "wercker status")](https://app.wercker.com/project/byKey/285dae1f97ed665286a2f325e29c4325)
 
@@ -21,24 +20,24 @@
 
 |CI|Plan|Limit to|Concurrency Job|Concurrency Step in Job|Parallelism|Max|Note|
 |:--|:--|:--|:--|:--|:--|:--|:--|
-|[AppVeyor](https://www.appveyor.com)|OSS|account|1|-|-|1||
-|[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|OSS|project|10|-|-|10 (* Projects)||
-|[Bitrise](https://www.bitrise.io)|OSS|project|1|-|-|1 (* Projects)|[Starting parallel builds with a single trigger](https://devcenter.bitrise.io/builds/triggering-builds/trigger-multiple-workflows/)|
-|[Buddy](https://buddy.works)|OSS|account|1|1|-|1||
+|[AppVeyor][]|OSS|account|1|-|-|1||
+|[Azure Pipelines][]|OSS|project|10|-|-|10 (* Projects)||
+|[Bitrise][]|OSS|project|1|-|-|1 (* Projects)|[Starting parallel builds with a single trigger](https://devcenter.bitrise.io/builds/triggering-builds/trigger-multiple-workflows/)|
+|[Buddy][]|OSS|account|1|1|-|1||
 |[CircleCI](https://circleci.com/pricing/)|FREE|account|1|-|1|1||
 |[CircleCI](https://circleci.com/pricing/)|OSS|account|1|-|4|4||
 |[Cirrus CI](https://cirrus-ci.org/faq/#are-there-any-limits)|OSS|account|Linux: 8, Windows: 2, FreeBSD: 2, macOS: 1|-|-|13||
-|[Codefresh](https://codefresh.io/)|OSS|account|1|2|-|2||
-|[CodeShip Pro](https://codeship.com/)|OSS|project|1|50+|-|50+ (* Projects)|limit nothing?|
-|[Drone](https://cloud.drone.io/)|OSS|limit nothing?|50+|50+|-|50+|limit nothing?|
-|[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|OSS|[account](https://github.blog/changelog/2019-10-28-github-actions-update-to-job-concurrency-usage-limits/)|20|-|-|20||
-|[Peakflow](https://www.peakflow.io/)|FREE|project|1|1|-|1 (* Projects)||
+|[Codefresh][]|OSS|account|1|2|-|2||
+|[CodeShip Pro][]|OSS|project|1|50+|-|50+ (* Projects)|limit nothing?|
+|[Drone][]|OSS|limit nothing?|50+|50+|-|50+|limit nothing?|
+|[GitHub Actions][]|OSS|[account](https://github.blog/changelog/2019-10-28-github-actions-update-to-job-concurrency-usage-limits/)|20|-|-|20||
+|[JFrog Pipelines][]|FREE|nodepool|-|just want|-|just want|[limit to node pool max](https://www.jfrog.com/confluence/display/JFROG/Managing+Pipelines+Node+Pools)|
+|[Peakflow][]|FREE|project|1|1|-|1 (* Projects)||
 |[Scrutinizer](https://scrutinizer-ci.com/docs/build/running_tests_in_parallel)|OSS|account|1|1|-|1||
-|[Semaphore 2.0](https://semaphoreci.com/product)|FREE|organization|1|-|1|1||
-|[Semaphore 2.0](https://semaphoreci.com/product)|OSS|organization|4|-|4|4||
-|[Shippable](http://shippable.com)|OSS|account|1|-|-|1||
-|[Travis CI](https://travis-ci.com/)|OSS|account|5(+2?)|-|-|5(+2?)|[Concurrency for open source projects](https://travis-ci.community/t/concurrency-for-open-source-projects/3827)|
-|[wercker](http://www.wercker.com/)|OSS|project|2|-|-|2 (* Projects)||
+|[Semaphore 2.0][]|FREE|organization|1|-|1|1||
+|[Semaphore 2.0][]|OSS|organization|4|-|4|4||
+|[Travis CI][]|OSS|account|5(+2?)|-|-|5(+2?)|[Concurrency for open source projects](https://travis-ci.community/t/concurrency-for-open-source-projects/3827)|
+|[wercker][]|OSS|project|2|-|-|2 (* Projects)||
 
 ### Concurrency Job
 
@@ -114,6 +113,11 @@ CI サービスの中には特定の処理を複数並列実行させる機能�
 [GitHubActions.json](./record/GitHubActions.json)
 ![GitHubActions](./record/images/GitHubActions.png)
 
+### JFrog Pipelines
+
+[JFrogPipelines.json](./record/JFrogPipelines.json)
+![JFrog Pipelines](./record/images/JFrogPipelines.png)
+
 ### Peakflow
 
 [Peakflow.json](./record/Peakflow.json)
@@ -129,11 +133,6 @@ CI サービスの中には特定の処理を複数並列実行させる機能�
 [Semaphore.json](./record/Semaphore.json)
 ![Semaphore](./record/images/Semaphore.png)
 
-### Shippable
-
-[Shippable.json](./record/Shippable.json)
-![Shippable](./record/images/Shippable.png)
-
 ### Travis CI
 
 [TravisCI.json](./record/TravisCI.json)
@@ -147,3 +146,24 @@ CI サービスの中には特定の処理を複数並列実行させる機能�
 ## Repository for CI service specification survey
 
 * [ci-specs](https://github.com/srz-zumix/ci-specs)
+
+[Appcircle]:https://appcircle.io/
+[AppVeyor]:https://www.appveyor.com
+[Azure Pipelines]:https://azure.microsoft.com/ja-jp/services/devops/pipelines/
+[Bitrise]:https://www.bitrise.io
+[Buddy]:https://buddy.works
+[CircleCI]:https://circleci.com
+[Cirrus CI]:https://cirrus-ci.org/
+[Codefresh]:https://codefresh.io/
+[Codeship]:https://codeship.com/
+[Codeship Basic]:https://codeship.com/
+[Codeship Pro]:https://codeship.com/
+[Drone]:https://cloud.drone.io/
+[GitHub Actions]:https://help.github.com/en/articles/about-github-actions
+[JFrog Pipelines]:https://www.jfrog.com/confluence/display/JFROG/JFrog+Pipelines
+[Peakflow]:https://www.peakflow.io/
+[Razorops]:https://razorops.com/
+[Scrutinizer]:https://scrutinizer-ci.com
+[Semaphore]:https://semaphoreci.com/
+[Travis CI]:https://travis-ci.com/
+[wercker]:http://www.wercker.com/

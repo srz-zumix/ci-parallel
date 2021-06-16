@@ -1,6 +1,9 @@
 - pipeline: "build"
-  trigger_mode: "ON_EVERY_PUSH"
-  ref_name: "master"
+  on: "EVENT"
+  events:
+  - type: "PUSH"
+    refs:
+      - master
   auto_clear_cache: true
   actions:
   - action: "Execute: Parallel"
@@ -14,6 +17,9 @@
         settable: false
       - key: "TYPE"
         value: "step"
+        settable: false
+      - key: "DRYRUN"
+        value: "true"
         settable: false
     execute_commands:
     - "./.ci/report.sh"

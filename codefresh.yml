@@ -1,6 +1,7 @@
 version: '1.0'
 stages:
   - checkout
+  - prepare
   - parallel
 
 steps:
@@ -17,6 +18,19 @@ steps:
             includes(lower("${{CF_COMMIT_MESSAGE}}"), "[ci skip]") == false
           noSkipCiInCommitMessageSkipCI: |
             includes(lower("${{CF_COMMIT_MESSAGE}}"), "[skip ci]") == false
+  prepareEnvironmentVariable:
+    title: Reading GitHub token / Set Environment variable
+    image: codefresh/cli
+    stage: prepare
+    commands:
+      - cf_export GITHUB_TOKEN=$(codefresh get context github --decrypt -o yaml | yq -y .spec.data.auth.password)
+      - cf_export DRYRUN:true
+  updateSubmodules:
+    image: codefresh/cfstep-gitsubmodules
+    stage: prepare
+    environment:
+      - CF_SUBMODULE_SYNC=true
+      - CF_SUBMODULE_UPDATE_RECURSIVE=true
   ParallelTests1:
     type: parallel
     stage: parallel

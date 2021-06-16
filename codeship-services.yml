@@ -5,5 +5,5 @@ gcc:
   volumes:
     - ./:/work
   environment:
-    # - DRYRUN=true
+    - DRYRUN=true
     - TYPE=step

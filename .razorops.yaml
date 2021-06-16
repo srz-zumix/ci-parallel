@@ -4,5 +4,6 @@ tasks:
     variables:
       - PARALLEL_NO=1
       - TYPE=step
+      - DRYRUN=true
     commands:
       - "./.ci/report.sh"

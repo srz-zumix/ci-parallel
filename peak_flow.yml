@@ -4,6 +4,7 @@ builds:
     environment:
       TYPE: job
       PARALLEL_NO: 1
+      DRYRUN: true
     script:
       - ./.ci/report.sh
   build_2:
@@ -11,5 +12,6 @@ builds:
     environment:
       TYPE: job
       PARALLEL_NO: 2
+      DRYRUN: true
     script:
       - ./.ci/report.sh
