@@ -18,11 +18,13 @@ steps:
             includes(lower("${{CF_COMMIT_MESSAGE}}"), "[ci skip]") == false
           noSkipCiInCommitMessageSkipCI: |
             includes(lower("${{CF_COMMIT_MESSAGE}}"), "[skip ci]") == false
-  get_git_token:
-    title: Reading GitHub token
+  prepareEnvironmentVariable:
+    title: Reading GitHub token / Set Environment variable
     image: codefresh/cli
+    stage: prepare
     commands:
       - cf_export GITHUB_TOKEN=$(codefresh get context github --decrypt -o yaml | yq -y .spec.data.auth.password)
+      - cf_export DRYRUN:true
   updateSubmodules:
     image: codefresh/cfstep-gitsubmodules
     stage: prepare

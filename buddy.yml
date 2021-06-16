@@ -18,6 +18,9 @@
       - key: "TYPE"
         value: "step"
         settable: false
+      - key: "DRYRUN"
+        value: "true"
+        settable: false
     execute_commands:
     - "./.ci/report.sh"
     mount_filesystem_path: "/buddy/ci-parallel"

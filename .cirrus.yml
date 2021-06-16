@@ -1,5 +1,6 @@
 env:
   INTEGROMAT_WEBHOOK_URL: ENCRYPTED[3f760bb35afbfa38ac940b7da7697b75cd220d74db6af093c0a34b6420663d14a71979a594b36250cf18e6cfd7ba72c6]
+  DRYRUN: true
 
 cirrus_container_task:
   only_if: &path-filter "changesInclude('.cirrus.yml', '.ci/*')"
