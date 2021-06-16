@@ -26,12 +26,12 @@ pipelines:
             - PARALLEL_NO: 2
             - PARALLEL_NO: 3
             - PARALLEL_NO: 4
-            # - PARALLEL_NO: 5
-            # - PARALLEL_NO: 6
-            # - PARALLEL_NO: 7
-            # - PARALLEL_NO: 8
-            # - PARALLEL_NO: 9
-            # - PARALLEL_NO: 10
+            - PARALLEL_NO: 5
+            - PARALLEL_NO: 6
+            - PARALLEL_NO: 7
+            - PARALLEL_NO: 8
+            - PARALLEL_NO: 9
+            - PARALLEL_NO: 10
         execution:
           onStart:
           - update_commit_status ci_parallel_gitRepo # Status: "processing"
