@@ -10,6 +10,10 @@ pipelines:
   - name: ci_parallel
     configuration:
       nodePool: parallel
+      environmentVariables:
+        readOnly:
+          TYPE: "step"
+          DRYRUN: true
     steps:
       - name: parallel
         type: Matrix
@@ -20,10 +24,6 @@ pipelines:
             - name: ci_parallel_gitRepo
           integrations:
             - name: ci_parallel_envs
-          environmentVariables:
-            readOnly:
-              TYPE: "step"
-              DRYRUN: true
         stepletMultipliers:
           environmentVariables:
             - PARALLEL_NO: 1
