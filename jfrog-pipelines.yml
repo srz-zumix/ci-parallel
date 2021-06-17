@@ -13,7 +13,7 @@ pipelines:
       environmentVariables:
         readOnly:
           TYPE: "step"
-          DRYRUN: true
+          DRYRUN: "true"
     steps:
       - name: parallel
         type: Matrix
