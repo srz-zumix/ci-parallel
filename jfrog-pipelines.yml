@@ -20,6 +20,10 @@ pipelines:
             - name: ci_parallel_gitRepo
           integrations:
             - name: ci_parallel_envs
+          environmentVariables:
+            readOnly:
+              TYPE: "step"
+              DRYRUN: true
         stepletMultipliers:
           environmentVariables:
             - PARALLEL_NO: 1
@@ -50,7 +54,7 @@ pipelines:
             - update_commit_status ci_parallel_gitRepo # Status: "processing"
             - pushd ${res_ci_parallel_gitRepo_resourcePath}
             - export INTEGROMAT_WEBHOOK_URL=${int_ci_parallel_envs_INTEGROMAT_WEBHOOK_URL}
-            - TYPE=step DRYRUN=true ./.ci/report.sh
+            - ./.ci/report.sh
             - popd
           onFailure:
             - update_commit_status ci_parallel_gitRepo # Status: "failure"
