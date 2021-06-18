@@ -36,7 +36,7 @@
 |[Scrutinizer](https://scrutinizer-ci.com/docs/build/running_tests_in_parallel)|OSS|account|1|1|-|1||
 |[Semaphore 2.0][]|FREE|organization|1|-|1|1||
 |[Semaphore 2.0][]|OSS|organization|4|-|4|4||
-|[Travis CI][]|OSS|account|5(+2?)|-|-|5(+2?)|[Concurrency for open source projects](https://travis-ci.community/t/concurrency-for-open-source-projects/3827)|
+|[Travis CI][]|FREE|account|20|-|-|20||
 |[wercker][]|OSS|project|2|-|-|2 (* Projects)||
 
 ### Concurrency Job
