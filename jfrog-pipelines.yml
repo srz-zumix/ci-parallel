@@ -5,7 +5,7 @@ resources:
       gitProvider: GitHub
       path: srz-zumix/ci-parallel
       branches:
-        include: master|^feature/.*|^jfrog/.*
+        include: master|^jfrog/.*
 pipelines:
   - name: ci_parallel
     configuration:
