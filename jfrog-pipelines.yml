@@ -27,26 +27,26 @@ pipelines:
         stepletMultipliers:
           environmentVariables:
             - PARALLEL_NO: 1
-            # - PARALLEL_NO: 2
-            # - PARALLEL_NO: 3
-            # - PARALLEL_NO: 4
-            # - PARALLEL_NO: 5
-            # - PARALLEL_NO: 6
-            # - PARALLEL_NO: 7
-            # - PARALLEL_NO: 8
-            # - PARALLEL_NO: 9
-            # - PARALLEL_NO: 10
-            # - PARALLEL_NO: 11
-            # - PARALLEL_NO: 12
-            # - PARALLEL_NO: 13
-            # - PARALLEL_NO: 14
-            # - PARALLEL_NO: 15
-            # - PARALLEL_NO: 16
-            # - PARALLEL_NO: 17
-            # - PARALLEL_NO: 18
-            # - PARALLEL_NO: 19
-            # - PARALLEL_NO: 20
-            # - PARALLEL_NO: 21
+            - PARALLEL_NO: 2
+            - PARALLEL_NO: 3
+            - PARALLEL_NO: 4
+            - PARALLEL_NO: 5
+            - PARALLEL_NO: 6
+            - PARALLEL_NO: 7
+            - PARALLEL_NO: 8
+            - PARALLEL_NO: 9
+            - PARALLEL_NO: 10
+            - PARALLEL_NO: 11
+            - PARALLEL_NO: 12
+            - PARALLEL_NO: 13
+            - PARALLEL_NO: 14
+            - PARALLEL_NO: 15
+            - PARALLEL_NO: 16
+            - PARALLEL_NO: 17
+            - PARALLEL_NO: 18
+            - PARALLEL_NO: 19
+            - PARALLEL_NO: 20
+            - PARALLEL_NO: 21
             # - PARALLEL_NO: 22
             # - PARALLEL_NO: 23
             # - PARALLEL_NO: 24
