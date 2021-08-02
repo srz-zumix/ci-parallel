@@ -31,7 +31,7 @@
 |[CodeShip Pro][]|OSS|project|1|50+|-|50+ (* Projects)|limit nothing?|
 |[Drone][]|OSS|limit nothing?|50+|50+|-|50+|limit nothing?|
 |[GitHub Actions][]|OSS|[account](https://github.blog/changelog/2019-10-28-github-actions-update-to-job-concurrency-usage-limits/)|20|-|-|20||
-|[JFrog Pipelines][]|FREE|nodepool|-|just want|-|just want|[limit to node pool max](https://www.jfrog.com/confluence/display/JFROG/Managing+Pipelines+Node+Pools)|
+|[JFrog Pipelines][]|FREE|nodepool|5|just want|-|just want|[limit to node pool max](https://www.jfrog.com/confluence/display/JFROG/Managing+Pipelines+Node+Pools)|
 |[Peakflow][]|FREE|project|1|1|-|1 (* Projects)||
 |[Scrutinizer](https://scrutinizer-ci.com/docs/build/running_tests_in_parallel)|OSS|account|1|1|-|1||
 |[Semaphore 2.0][]|FREE|organization|1|-|1|1||
@@ -164,6 +164,7 @@ CI サービスの中には特定の処理を複数並列実行させる機能�
 [Peakflow]:https://www.peakflow.io/
 [Razorops]:https://razorops.com/
 [Scrutinizer]:https://scrutinizer-ci.com
+[Semaphore 2.0]:https://semaphoreci.com/
 [Semaphore]:https://semaphoreci.com/
 [Travis CI]:https://travis-ci.com/
 [wercker]:http://www.wercker.com/
