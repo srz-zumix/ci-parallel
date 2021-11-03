@@ -24,7 +24,7 @@ base: &base
     - image: circleci/buildpack-deps:cosmic-browsers
   environment:
     TYPE: step
-    DRYRUN: true
+    # DRYRUN: true
   steps:
     - parallel:
         i: << parameters.i >>
