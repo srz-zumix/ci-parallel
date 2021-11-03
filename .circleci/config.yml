@@ -51,6 +51,8 @@ jobs:
     <<: *base4
   parallel3:
     <<: *base2
+  parallel4:
+    <<: *base4
 
 workflows:
   default-test:
@@ -60,6 +62,10 @@ workflows:
       - parallel2:
           matrix:
             parameters:
-              i: [4, 8, 12, 16, 20, 24, 28]
+              i: [4, 8, 12, 16, 20, 24]
       - parallel3:
+          matrix:
+            parameters:
+              i: [28, 30]
+      - parallel4:
           i: 32
