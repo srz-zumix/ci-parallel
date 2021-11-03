@@ -47,7 +47,7 @@ jobs:
   parallel4:
     <<: *base4
   parallel5:
-    <<: *base5
+    <<: *base1
 
 workflows:
   default-test:
