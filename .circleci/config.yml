@@ -14,7 +14,22 @@ commands:
             export PARALLEL_NO=$(($CIRCLE_NODE_INDEX + << parameters.i >>))
             ./.ci/report.sh
 
-base: &base
+base2: &base2
+  parallelism: 2
+  parameters:
+    i:
+      type: integer
+      default: 0
+  docker:
+    - image: circleci/buildpack-deps:cosmic-browsers
+  environment:
+    TYPE: step
+    # DRYRUN: true
+  steps:
+    - parallel:
+        i: << parameters.i >>
+
+base4: &base4
   parallelism: 4
   parameters:
     i:
@@ -31,9 +46,11 @@ base: &base
 
 jobs:
   parallel1:
-    <<: *base
+    <<: *base4
   parallel2:
-    <<: *base
+    <<: *base4
+  parallel3:
+    <<: *base2
 
 workflows:
   default-test:
@@ -44,3 +61,5 @@ workflows:
           matrix:
             parameters:
               i: [4, 8, 12, 16, 20, 24, 28]
+      - parallel2:
+          i: 32
