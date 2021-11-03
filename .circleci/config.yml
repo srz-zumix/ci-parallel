@@ -41,6 +41,6 @@ workflows:
       - parallel1:
           i: 0
       - parallel2:
-        matrix:
+          matrix:
             parameters:
               i: [4, 8, 12, 16, 20, 24, 28]
