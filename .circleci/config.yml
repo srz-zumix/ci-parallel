@@ -29,7 +29,8 @@ base1: &base1
     - parallel:
         i: << parameters.i >>
 
-base2: &base1
+base2: &base2
+  <<: *base1
   parallelism: 2
 
 base4: &base4
