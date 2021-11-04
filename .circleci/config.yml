@@ -53,30 +53,31 @@ jobs:
 workflows:
   default-test:
     jobs:
-      # - parallel4a:
-      #     i: 0
-      # - parallel4b:
-      #     matrix:
-      #       parameters:
-      #         i: [4, 8, 12, 16, 20, 24]
-      # - parallel2:
-      #     matrix:
-      #       parameters:
-      #         i: [28, 30]
-      # - parallel4c:
-      #     i: 32
-      #====================================
-      # 4x1 + 4x7 + 2x1
       - parallel4a:
           i: 0
       - parallel4b:
           matrix:
             parameters:
-              i: [4, 8, 12, 16, 20, 24, 28]
+              i: [4, 8, 12, 16, 20, 24]
       - parallel2:
           matrix:
             parameters:
-              i: [32]
+              i: [28, 30]
+      - parallel4c:
+          i: 32
+      #====================================
+      # 4x1 + 4x7 + 2x1
+      # = 30 -> 4
+      # - parallel4a:
+      #     i: 0
+      # - parallel4b:
+      #     matrix:
+      #       parameters:
+      #         i: [4, 8, 12, 16, 20, 24, 28]
+      # - parallel2:
+      #     matrix:
+      #       parameters:
+      #         i: [32]
       #====================================
       # 4x7 + 2x1 + 4x1
       # = 30 -> 4
