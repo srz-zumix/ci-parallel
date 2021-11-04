@@ -67,16 +67,16 @@ workflows:
       #     i: 32
       #====================================
       # 4x1 + 4x7 + 2x1
-      # - parallel4a:
-      #     i: 0
-      # - parallel4b:
-      #     matrix:
-      #       parameters:
-      #         i: [4, 8, 12, 16, 20, 24, 28]
-      # - parallel2:
-      #     matrix:
-      #       parameters:
-      #         i: [32]
+      - parallel4a:
+          i: 0
+      - parallel4b:
+          matrix:
+            parameters:
+              i: [4, 8, 12, 16, 20, 24, 28]
+      - parallel2:
+          matrix:
+            parameters:
+              i: [32]
       #====================================
       # 4x7 + 2x1 + 4x1
       # = 30 -> 4
@@ -94,14 +94,15 @@ workflows:
       #         i: [30]
       #====================================
       # 4x8 + 2x1
-      - parallel4a:
-          matrix:
-            parameters:
-              i: [0, 4, 8, 12, 16, 20, 24, 28]
-      - parallel2:
-          matrix:
-            parameters:
-              i: [32]
+      # = 30 -> 4
+      # - parallel4a:
+      #     matrix:
+      #       parameters:
+      #         i: [0, 4, 8, 12, 16, 20, 24, 28]
+      # - parallel2:
+      #     matrix:
+      #       parameters:
+      #         i: [32]
       #====================================
       # 4x7 + 2x1
       # = 30
