@@ -1,0 +1,482 @@
+[
+	{
+		"name": "parallel4a-8 4/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "0",
+		"pid": "0",
+		"tid": "11"
+	},
+	{
+		"name": "parallel4a-12 3/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "13000000",
+		"pid": "0",
+		"tid": "14"
+	},
+	{
+		"name": "parallel4a-12 4/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "14000000",
+		"pid": "0",
+		"tid": "15"
+	},
+	{
+		"name": "parallel4a-12 2/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "15000000",
+		"pid": "0",
+		"tid": "13"
+	},
+	{
+		"name": "parallel4a-20 2/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "15000000",
+		"pid": "0",
+		"tid": "21"
+	},
+	{
+		"name": "parallel4a-4 2/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "17000000",
+		"pid": "0",
+		"tid": "5"
+	},
+	{
+		"name": "parallel4a-4 3/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "17000000",
+		"pid": "0",
+		"tid": "6"
+	},
+	{
+		"name": "parallel4a-8 2/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "17000000",
+		"pid": "0",
+		"tid": "9"
+	},
+	{
+		"name": "parallel4a-20 4/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "18000000",
+		"pid": "0",
+		"tid": "23"
+	},
+	{
+		"name": "parallel4a-16 4/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "18000000",
+		"pid": "0",
+		"tid": "19"
+	},
+	{
+		"name": "parallel4a-20 3/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "18000000",
+		"pid": "0",
+		"tid": "22"
+	},
+	{
+		"name": "parallel4a-20 1/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "19000000",
+		"pid": "0",
+		"tid": "20"
+	},
+	{
+		"name": "parallel4a-12 1/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "19000000",
+		"pid": "0",
+		"tid": "12"
+	},
+	{
+		"name": "parallel4a-24 2/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "19000000",
+		"pid": "0",
+		"tid": "25"
+	},
+	{
+		"name": "parallel4a-0 1/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "19000000",
+		"pid": "0",
+		"tid": "0"
+	},
+	{
+		"name": "parallel4a-16 3/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "20000000",
+		"pid": "0",
+		"tid": "18"
+	},
+	{
+		"name": "parallel4a-8 3/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "20000000",
+		"pid": "0",
+		"tid": "10"
+	},
+	{
+		"name": "parallel4a-16 1/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "21000000",
+		"pid": "0",
+		"tid": "16"
+	},
+	{
+		"name": "parallel4a-4 1/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "21000000",
+		"pid": "0",
+		"tid": "4"
+	},
+	{
+		"name": "parallel4a-4 4/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "22000000",
+		"pid": "0",
+		"tid": "7"
+	},
+	{
+		"name": "parallel4a-0 4/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "23000000",
+		"pid": "0",
+		"tid": "3"
+	},
+	{
+		"name": "parallel4a-24 4/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "23000000",
+		"pid": "0",
+		"tid": "27"
+	},
+	{
+		"name": "parallel2-28 2/2",
+		"cat": "step",
+		"ph": "B",
+		"ts": "26000000",
+		"pid": "0",
+		"tid": "29"
+	},
+	{
+		"name": "parallel4a-0 3/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "26000000",
+		"pid": "0",
+		"tid": "2"
+	},
+	{
+		"name": "parallel4a-24 1/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "27000000",
+		"pid": "0",
+		"tid": "24"
+	},
+	{
+		"name": "parallel4a-0 2/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "29000000",
+		"pid": "0",
+		"tid": "1"
+	},
+	{
+		"name": "parallel2-28 1/2",
+		"cat": "step",
+		"ph": "B",
+		"ts": "29000000",
+		"pid": "0",
+		"tid": "28"
+	},
+	{
+		"name": "parallel4a-24 3/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "30000000",
+		"pid": "0",
+		"tid": "26"
+	},
+	{
+		"name": "parallel4a-8 1/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "30000000",
+		"pid": "0",
+		"tid": "8"
+	},
+	{
+		"name": "parallel4a-16 2/4",
+		"cat": "step",
+		"ph": "B",
+		"ts": "32000000",
+		"pid": "0",
+		"tid": "17"
+	},
+	{
+		"name": "parallel4a-8 4/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "180000000",
+		"pid": "0",
+		"tid": "11"
+	},
+	{
+		"name": "parallel4a-12 3/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "194000000",
+		"pid": "0",
+		"tid": "14"
+	},
+	{
+		"name": "parallel4a-12 4/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "195000000",
+		"pid": "0",
+		"tid": "15"
+	},
+	{
+		"name": "parallel4a-12 2/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "196000000",
+		"pid": "0",
+		"tid": "13"
+	},
+	{
+		"name": "parallel4a-20 2/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "196000000",
+		"pid": "0",
+		"tid": "21"
+	},
+	{
+		"name": "parallel4a-4 2/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "197000000",
+		"pid": "0",
+		"tid": "5"
+	},
+	{
+		"name": "parallel4a-4 3/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "198000000",
+		"pid": "0",
+		"tid": "6"
+	},
+	{
+		"name": "parallel4a-8 2/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "198000000",
+		"pid": "0",
+		"tid": "9"
+	},
+	{
+		"name": "parallel4a-20 4/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "198000000",
+		"pid": "0",
+		"tid": "23"
+	},
+	{
+		"name": "parallel4a-16 4/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "199000000",
+		"pid": "0",
+		"tid": "19"
+	},
+	{
+		"name": "parallel4a-20 3/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "199000000",
+		"pid": "0",
+		"tid": "22"
+	},
+	{
+		"name": "parallel4a-20 1/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "199000000",
+		"pid": "0",
+		"tid": "20"
+	},
+	{
+		"name": "parallel4a-12 1/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "199000000",
+		"pid": "0",
+		"tid": "12"
+	},
+	{
+		"name": "parallel4a-24 2/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "200000000",
+		"pid": "0",
+		"tid": "25"
+	},
+	{
+		"name": "parallel4a-0 1/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "200000000",
+		"pid": "0",
+		"tid": "0"
+	},
+	{
+		"name": "parallel4a-16 3/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "201000000",
+		"pid": "0",
+		"tid": "18"
+	},
+	{
+		"name": "parallel4a-8 3/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "201000000",
+		"pid": "0",
+		"tid": "10"
+	},
+	{
+		"name": "parallel4a-16 1/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "201000000",
+		"pid": "0",
+		"tid": "16"
+	},
+	{
+		"name": "parallel4a-4 1/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "201000000",
+		"pid": "0",
+		"tid": "4"
+	},
+	{
+		"name": "parallel4a-4 4/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "202000000",
+		"pid": "0",
+		"tid": "7"
+	},
+	{
+		"name": "parallel4a-0 4/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "203000000",
+		"pid": "0",
+		"tid": "3"
+	},
+	{
+		"name": "parallel4a-24 4/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "203000000",
+		"pid": "0",
+		"tid": "27"
+	},
+	{
+		"name": "parallel2-28 2/2",
+		"cat": "step",
+		"ph": "E",
+		"ts": "206000000",
+		"pid": "0",
+		"tid": "29"
+	},
+	{
+		"name": "parallel4a-0 3/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "206000000",
+		"pid": "0",
+		"tid": "2"
+	},
+	{
+		"name": "parallel4a-24 1/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "208000000",
+		"pid": "0",
+		"tid": "24"
+	},
+	{
+		"name": "parallel4a-0 2/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "209000000",
+		"pid": "0",
+		"tid": "1"
+	},
+	{
+		"name": "parallel2-28 1/2",
+		"cat": "step",
+		"ph": "E",
+		"ts": "209000000",
+		"pid": "0",
+		"tid": "28"
+	},
+	{
+		"name": "parallel4a-24 3/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "210000000",
+		"pid": "0",
+		"tid": "26"
+	},
+	{
+		"name": "parallel4a-8 1/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "210000000",
+		"pid": "0",
+		"tid": "8"
+	},
+	{
+		"name": "parallel4a-16 2/4",
+		"cat": "step",
+		"ph": "E",
+		"ts": "212000000",
+		"pid": "0",
+		"tid": "17"
+	}
+]

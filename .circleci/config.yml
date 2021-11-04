@@ -66,21 +66,45 @@ workflows:
       # - parallel4c:
       #     i: 32
       #====================================
-      # 4 x 7 + 2 x 1 + 4 x 1
-      - parallel4a:
-          matrix:
-            parameters:
-              i: [0, 4, 8, 12, 16, 20, 24]
-      - parallel2:
-          matrix:
-            parameters:
-              i: [28]
-      - parallel4b:
-          matrix:
-            parameters:
-              i: [30]
+      # 4x1 + 4x7 + 2x1
+      # - parallel4a:
+      #     i: 0
+      # - parallel4b:
+      #     matrix:
+      #       parameters:
+      #         i: [4, 8, 12, 16, 20, 24, 28]
+      # - parallel2:
+      #     matrix:
+      #       parameters:
+      #         i: [32]
       #====================================
-      # 4 x 7 + 2 x 1
+      # 4x7 + 2x1 + 4x1
+      # = 30 -> 4
+      # - parallel4a:
+      #     matrix:
+      #       parameters:
+      #         i: [0, 4, 8, 12, 16, 20, 24]
+      # - parallel2:
+      #     matrix:
+      #       parameters:
+      #         i: [28]
+      # - parallel4b:
+      #     matrix:
+      #       parameters:
+      #         i: [30]
+      #====================================
+      # 4x8 + 2x1
+      # - parallel4a:
+      #     matrix:
+      #       parameters:
+      #         i: [0, 4, 8, 12, 16, 20, 24, 28]
+      # - parallel2:
+      #     matrix:
+      #       parameters:
+      #         i: [32]
+      #====================================
+      # 4x7 + 2x1
+      # = 30
       # - parallel4a:
       #     matrix:
       #       parameters:
@@ -90,19 +114,22 @@ workflows:
       #       parameters:
       #         i: [28]
       #====================================
-      # 4 x 8
+      # 4x8
+      # = 28 -> 4
       # - parallel4a:
       #     matrix:
       #       parameters:
       #         i: [0, 4, 8, 12, 16, 20, 24, 28]
       #====================================
-      # 2 x 16
+      # 2x16
+      # = 30 -> 2
       # - parallel2:
       #     matrix:
       #       parameters:
       #         i: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]
       #====================================
-      # 1 x 31
+      # 1x31
+      # = 30 -> 1
       # - parallel1:
       #     matrix:
       #       parameters:
