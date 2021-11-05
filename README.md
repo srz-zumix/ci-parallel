@@ -24,8 +24,8 @@
 |[Azure Pipelines][]|OSS|project|10|-|-|10 (* Projects)||
 |[Bitrise][]|OSS|project|1|-|-|1 (* Projects)|[Starting parallel builds with a single trigger](https://devcenter.bitrise.io/builds/triggering-builds/trigger-multiple-workflows/)|
 |[Buddy][]|OSS|account|1|1|-|1||
-|[CircleCI](https://circleci.com/pricing/)|FREE|account|1|-|1|1||
-|[CircleCI](https://circleci.com/pricing/)|OSS|account|1|-|4|4||
+|[CircleCI](https://circleci.com/pricing/)|FREE|account|30|-|1|1||
+|[CircleCI](https://circleci.com/pricing/)|OSS|account|30|-|4|4||
 |[Cirrus CI](https://cirrus-ci.org/faq/#are-there-any-limits)|OSS|account|Linux: 8, Windows: 2, FreeBSD: 2, macOS: 1|-|-|13||
 |[Codefresh][]|OSS|account|1|2|-|2||
 |[CodeShip Pro][]|OSS|project|1|50+|-|50+ (* Projects)|limit nothing?|
@@ -85,8 +85,11 @@ CI サービスの中には特定の処理を複数並列実行させる機能�
 
 ### CircleCI
 
-[CircleCI.json](./record/CircleCI.json)
-![CircleCI](./record/images/CircleCI.png)
+[CircleCI-1x31.json](./record/CircleCI-1x31.json)
+![CircleCI 1x31](./record/images/CircleCI-1x31.png)
+
+[CircleCI-4x8.json](./record/CircleCI-4x8.json)
+![CircleCI 4x8](./record/images/CircleCI-4x8.png)
 
 ### Cirrus CI
 
