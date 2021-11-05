@@ -85,8 +85,11 @@ CI サービスの中には特定の処理を複数並列実行させる機能�
 
 ### CircleCI
 
-[CircleCI.json](./record/CircleCI.json)
-![CircleCI](./record/images/CircleCI.png)
+[CircleCI-1x31.json](./record/CircleCI-1x31.json)
+![CircleCI 1x31](./record/images/CircleCI-1x31.png)
+
+[CircleCI-4x8.json](./record/CircleCI-4x8.json)
+![CircleCI 4x8](./record/images/CircleCI-4x8.png)
 
 ### Cirrus CI
 
