@@ -1,0 +1,29 @@
+on:
+  # pull_request:
+  schedule:
+    - cron: '0 23 * * *'
+
+name: Submodule Update
+jobs:
+  submodule_update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: config
+        run: |
+          git config user.name ${{ github.actor }}
+          git config user.email noreply@github.com
+      - name: submodule update
+        run: |
+          git fetch
+          git checkout master
+          git submodule init
+          git submodule update --remote
+          # git submodule foreach "git remote show origin | grep 'HEAD branch' | awk '{print \$NF}' | xargs -I{} git pull origin {}"
+      - name: commit
+        run: |
+          git add -A
+          git commit -m "update head [ci skip]" || true
+      - name: push
+        run: |
+          git push origin master
