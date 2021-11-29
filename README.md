@@ -13,7 +13,7 @@
 [![Peakflow Build Status](https://www.peakflow.io/en/projects/ci-parallel/branch-statuses/master.svg)](https://www.peakflow.io/en/projects/ci-parallel/build-groups?build_groups_q%5Bbranch_name_cont%5D=master)
 [![Scrutinizer Build Status](https://scrutinizer-ci.com/g/srz-zumix/ci-parallel/badges/build.png?b=master)](https://scrutinizer-ci.com/g/srz-zumix/ci-parallel/build-status/master)
 [![Semaphore 2.0 Build Status](https://srz-zumix.semaphoreci.com/badges/ci-parallel/branches/master.svg)](https://srz-zumix.semaphoreci.com/projects/ci-parallel)
-[![Travis-CI Build Status](https://travis-ci.com/srz-zumix/ci-parallel.svg?branch=master)](https://travis-ci.com/srz-zumix/ci-parallel)
+[![Travis-CI Build Status](https://travis-ci.com/srz-zumix/ci-parallel.svg?branch=master)](https://app.travis-ci.com/github/srz-zumix/ci-parallel)
 [![wercker status](https://app.wercker.com/status/285dae1f97ed665286a2f325e29c4325/s/master "wercker status")](https://app.wercker.com/project/byKey/285dae1f97ed665286a2f325e29c4325)
 
 ## CI service parallel capability (FREE/OSS Plan)
