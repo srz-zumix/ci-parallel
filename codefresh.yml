@@ -28,6 +28,7 @@ steps:
   updateSubmodules:
     image: codefresh/cfstep-gitsubmodules
     stage: prepare
+    when: *skip-condition
     environment:
       - CF_SUBMODULE_SYNC=true
       - CF_SUBMODULE_UPDATE_RECURSIVE=true
