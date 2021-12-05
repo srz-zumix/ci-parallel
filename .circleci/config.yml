@@ -40,7 +40,7 @@ base4: &base4
   parallelism: 4
 
 base12: &base12
-  <<: *base12
+  <<: *base1
   parallelism: 12
 
 base30: &base30
