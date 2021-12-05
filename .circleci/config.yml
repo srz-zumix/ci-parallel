@@ -21,8 +21,9 @@ base1: &base1
     i:
       type: integer
       default: 0
-  docker:
-    - image: circleci/buildpack-deps:cosmic-browsers
+  machine: true
+  # docker:
+  #   - image: circleci/buildpack-deps:cosmic-browsers
   environment:
     TYPE: step
     # DRYRUN: true
