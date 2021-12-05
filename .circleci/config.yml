@@ -25,7 +25,7 @@ base1: &base1
     - image: circleci/buildpack-deps:cosmic-browsers
   environment:
     TYPE: step
-    DRYRUN: true
+    # DRYRUN: true
   steps:
     - parallel:
         i: << parameters.i >>
@@ -36,7 +36,7 @@ base2: &base2
 
 base4: &base4
   <<: *base1
-  parallelism: 4
+  parallelism: 8
 
 jobs:
   parallel4a:
