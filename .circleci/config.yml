@@ -47,6 +47,10 @@ base31: &base31
   parallelism: 31
 
 jobs:
+  parallel31:
+    <<: *base31
+  parallel30:
+    <<: *base30
   parallel4a:
     <<: *base4
   parallel4b:
