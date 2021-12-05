@@ -21,9 +21,9 @@ base1: &base1
     i:
       type: integer
       default: 0
-  machine: true
-  # docker:
-  #   - image: circleci/buildpack-deps:cosmic-browsers
+  # machine: true
+  docker:
+    - image: circleci/buildpack-deps:cosmic-browsers
   environment:
     TYPE: step
     # DRYRUN: true
@@ -39,19 +39,19 @@ base4: &base4
   <<: *base1
   parallelism: 4
 
+base12: &base12
+  <<: *base12
+  parallelism: 12
+
 base30: &base30
   <<: *base1
   parallelism: 30
 
-base31: &base31
-  <<: *base1
-  parallelism: 31
-
 jobs:
-  parallel31:
-    <<: *base31
   parallel30:
     <<: *base30
+  parallel12:
+    <<: *base12
   parallel4a:
     <<: *base4
   parallel4b:
@@ -151,4 +151,4 @@ workflows:
       #====================================
       # 1x30
       # = 30
-      - parallel30
+      - parallel12
