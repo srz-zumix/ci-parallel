@@ -151,7 +151,7 @@ workflows:
       #====================================
       # 16x2
       # =
-      - parallel16
+      - parallel16:
           matrix:
             parameters:
               i: [0, 16]
