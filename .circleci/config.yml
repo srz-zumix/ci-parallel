@@ -39,9 +39,9 @@ base4: &base4
   <<: *base1
   parallelism: 4
 
-base12: &base12
+base16: &base16
   <<: *base1
-  parallelism: 12
+  parallelism: 16
 
 base30: &base30
   <<: *base1
@@ -50,8 +50,8 @@ base30: &base30
 jobs:
   parallel30:
     <<: *base30
-  parallel12:
-    <<: *base12
+  parallel16:
+    <<: *base16
   parallel4a:
     <<: *base4
   parallel4b:
@@ -149,6 +149,9 @@ workflows:
       #       parameters:
       #         i: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
       #====================================
-      # 1x30
-      # = 30
-      - parallel12
+      # 16x2
+      # =
+      - parallel16
+          matrix:
+            parameters:
+              i: [0, 16]
