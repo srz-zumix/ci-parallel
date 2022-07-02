@@ -14,7 +14,6 @@
 [![Scrutinizer Build Status](https://scrutinizer-ci.com/g/srz-zumix/ci-parallel/badges/build.png?b=master)](https://scrutinizer-ci.com/g/srz-zumix/ci-parallel/build-status/master)
 [![Semaphore 2.0 Build Status](https://srz-zumix.semaphoreci.com/badges/ci-parallel/branches/master.svg)](https://srz-zumix.semaphoreci.com/projects/ci-parallel)
 [![Travis-CI Build Status](https://travis-ci.com/srz-zumix/ci-parallel.svg?branch=master)](https://app.travis-ci.com/github/srz-zumix/ci-parallel)
-[![wercker status](https://app.wercker.com/status/285dae1f97ed665286a2f325e29c4325/s/master "wercker status")](https://app.wercker.com/project/byKey/285dae1f97ed665286a2f325e29c4325)
 
 ## CI service parallel capability (FREE/OSS Plan)
 
@@ -37,7 +36,6 @@
 |[Semaphore 2.0][]|FREE|organization|1|-|1|1||
 |[Semaphore 2.0][]|OSS|organization|4|-|4|4||
 |[Travis CI][]|FREE|account|20|-|-|20||
-|[wercker][]|OSS|project|2|-|-|2 (* Projects)||
 
 ### Concurrency Job
 
@@ -144,11 +142,6 @@ CI サービスの中には特定の処理を複数並列実行させる機能�
 [TravisCI.json](./record/TravisCI.json)
 ![TravisCI](./record/images/TravisCI.png)
 
-### Wercker
-
-[Wercker.json](./record/Wercker.json)
-![Wercker](./record/images/Wercker.png)
-
 ## Repository for CI service specification survey
 
 * [ci-specs](https://github.com/srz-zumix/ci-specs)
@@ -173,4 +166,3 @@ CI サービスの中には特定の処理を複数並列実行させる機能�
 [Semaphore 2.0]:https://semaphoreci.com/
 [Semaphore]:https://semaphoreci.com/
 [Travis CI]:https://travis-ci.com/
-[wercker]:http://www.wercker.com/
