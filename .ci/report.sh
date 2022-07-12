@@ -32,7 +32,7 @@ if [ -z ${SLEEP_SECONDS+x} ]; then
 fi
 
 if [ -z ${INTEGROMAT_WEBHOOK_URL} ]; then
-  export INTEGROMAT_WEBHOOK_URL="https://hook.integromat.com/k1c42tq981hsvjxtqvoe8runsyfem197"
+  export INTEGROMAT_WEBHOOK_URL="https://hook.us1.make.com/00oyrwmyiep223pny4wg2c3bhxxps75d"
 fi
 
 ${BASEDIR}/send.sh "B"
