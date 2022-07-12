@@ -1,5 +1,5 @@
 ---
-format_version: '8'
+format_version: '11'
 default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
 project_type: other
 trigger_map:
@@ -10,10 +10,10 @@ trigger_map:
 workflows:
   primary:
     steps:
-    - activate-ssh-key@4.0.3:
+    - activate-ssh-key:
         run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
-    - git-clone@4.0.17: {}
-    - script@1.1.5:
+    - git-clone: {}
+    - script:
         title: parallel
         inputs:
         - content: |-
@@ -29,10 +29,10 @@ workflows:
             ./.ci/report.sh
   secondary:
     steps:
-    - activate-ssh-key@4.0.3:
+    - activate-ssh-key:
         run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
-    - git-clone@4.0.17: {}
-    - script@1.1.5:
+    - git-clone: {}
+    - script:
         title: parallel
         inputs:
         - content: |-
@@ -54,3 +54,6 @@ workflows:
             primary
             secondary
         - access_token: "$ACCESS_TOKEN"
+meta:
+  bitrise.io:
+    stack: osx-xcode-14.0.x
