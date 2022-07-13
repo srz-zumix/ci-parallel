@@ -48,7 +48,7 @@ workflows:
             ./.ci/report.sh
   root:
     steps:
-    - build-router-start@0:
+    - build-router-start:
         inputs:
         - workflows: |-
             primary
